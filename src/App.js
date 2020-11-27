@@ -34,7 +34,7 @@ function App() {
   const shopsRef = firestore.collection("shops");
   const query = shopsRef.orderBy("createdAt").limit(25);
 
-  const [shops] = useCollectionData(query, { idField: "id" });
+  const [shops] = useCollectionData(shopsRef, { idField: "id" });
   console.log(shops);
 
   return (

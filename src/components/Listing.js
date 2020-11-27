@@ -5,21 +5,18 @@ import ListingItem from "./ListingItem";
 
 const Listing = (props) => {
   const listingContext = useContext(ListingContext);
-//   const { listings } = listingContext;
+  //   const { listings } = listingContext;
   const listings = props.listings;
-
-  
 
   return (
     <main role="main">
       <div className="album py-5 bg-light">
         <div className="container">
           <div className="row">
-            <div className="col-md-4">
-              {listings && listings.map((value, index) => (
-                <ListingItem key = {index} details={value} />
-              ))}
-            </div>
+              {listings &&
+                listings.map((value, index) => (
+                  <ListingItem key={index} details={value} />
+                ))}
           </div>
         </div>
       </div>
