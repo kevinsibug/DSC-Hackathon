@@ -1,5 +1,4 @@
 import React, { useReducer } from "react";
-import axios from "axios";
 import ListingContext from "./listingContext";
 import ListingReducer from "./listingReducer";
 import {
@@ -7,11 +6,18 @@ import {
   REVIEW_LISTING,
   CHAT_LISTING,
   SET_LOADING,
-} from "../types";
+} from "./types";
 
 const ListingState = (props) => {
   const initialState = {
-    listings: [],
+    listings: [
+      {
+        id: "1",
+        name: "restaurant 1",
+        address: "sample address",
+        rating: { size: 30, value: 2.5, edit: false },
+      },
+    ],
     loading: false,
   };
   const [state, dispatch] = useReducer(ListingReducer, initialState);
@@ -23,7 +29,6 @@ const ListingState = (props) => {
   //Chat Listing
 
   //Set Loading
-
 
   return (
     <ListingContext.Provider

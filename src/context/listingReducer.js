@@ -3,7 +3,7 @@ import {
     REVIEW_LISTING,
     CHAT_LISTING,
     SET_LOADING,
-  } from "../types";
+  } from "./types";
   
 
 export default (state, action) => {
