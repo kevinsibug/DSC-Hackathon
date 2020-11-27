@@ -1,0 +1,4 @@
+export const SORT_LISTINGS = 'SORT_LISTINGS';
+export const REVIEW_LISTING = 'REVIEW_LISTING';
+export const CHAT_LISTING = 'CHAT_LISTING';
+export const SET_LOADING = 'SET_LOADING';
