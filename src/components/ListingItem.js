@@ -17,10 +17,7 @@ const ListingItem = (props) => {
             <p className="card-text">{description}</p>
             <p className="card-text">{category}</p>
             <div className="d-flex justify-content-between align-items-center">
-              <div className="btn-group">
-                <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
-              </div>
-              <small className="text-muted">9 mins</small>
+              {/* <small className="text-muted">9 mins</small> */}
             </div>
           </div>
         </div>

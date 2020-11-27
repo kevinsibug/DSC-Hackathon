@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
 //firebase SDK
@@ -10,7 +11,9 @@ import "firebase/auth"; //firestore authentication
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
-import Listing from "./components/Listing";
+import Home from "./pages/Home";
+import Shops from "./pages/Shops";
+
 import ListingState from "./context/ListingState";
 
 firebase.initializeApp({
@@ -32,14 +35,18 @@ function App() {
   const query = shopsRef.orderBy("createdAt").limit(25);
 
   const [shops] = useCollectionData(query, { idField: "id" });
-  console.log(shops)
-
+  console.log(shops);
 
   return (
     <ListingState>
-      <div className="App">
-        <Listing listings = { shops }/>
-      </div>
+      <Router>
+        <div className="App container">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/shops" render = {props => <Shops listings = {shops}/>}/>
+          </Switch>
+        </div>
+      </Router>
     </ListingState>
   );
 }
