@@ -7,6 +7,7 @@ import {
   SHOW_TEXT,
   SHOW_LOCATION,
   SET_SHOP,
+  SET_CHAT,
 } from "./types";
 
 const ListingState = (props) => {
@@ -16,6 +17,7 @@ const ListingState = (props) => {
     location: "",
     loading: false,
     shop: "",
+    chat: "",
   };
   const [state, dispatch] = useReducer(ListingReducer, initialState);
 
@@ -56,6 +58,13 @@ const ListingState = (props) => {
       payload: text,
     });
   }
+  //Set Chat
+  const setChat = (text) => {
+    dispatch({
+      type: SET_CHAT,
+      payload: text,
+    });
+  }
 
   return (
     <ListingContext.Provider
@@ -65,11 +74,13 @@ const ListingState = (props) => {
         text: state.text,
         location: state.location,
         shop: state.shop,
+        chat: state.chat,
         showCategory,
         resetCategory,
         showText,
         showLocation,
-        setShop
+        setShop,
+        setChat
       }}
     >
       {props.children}

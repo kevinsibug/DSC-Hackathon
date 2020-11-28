@@ -7,12 +7,13 @@ import ReactStars from "react-rating-stars-component";
 import ListingContext from "../context/listingContext";
 
 const ListingItem = (props) => {
-  const {name, address, rating, category, description } = props.details;
+  const {name, address, rating, category, description, chatRoomName } = props.details;
   const listingContext = useContext(ListingContext);
 
-  const {setShop} = listingContext;
+  const {setShop, setChat} = listingContext;
 
   const onClick = (e) => {
+    setChat(chatRoomName)
     setShop(name)
   };
 
