@@ -220,7 +220,7 @@ nav .navbar li a {
 
 .button {
   background-color: #6a3c34;
-  color: white;
+  color: #FFF5E1;
   padding: 0.5rem 3.5rem;
   border-radius: 6px;
   border: none;
@@ -244,8 +244,28 @@ nav .navbar li a {
   padding-bottom: 3em;
 }
 
+.social-icon {
+  padding-right: 1em;
+  height: 2em;
+}
+
+.footer-indent{
+  padding-left: 4em;
+}
+
+.links {
+  text-decoration: none;
+  color: #FFF5E1;
+}
+
+.links:hover {
+  text-decoration: none;
+  color: #FFF5E1;
+}
+
 footer{
   background-color: #6A3C34;
+  color: #FFF5E1;
   width: 100%;
   left: 0;
   position: absolute;

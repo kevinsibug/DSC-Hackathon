@@ -2,11 +2,15 @@ import React from 'react'
 
 import HomeBanner from '../components/HomeBanner'
 import Subheader from '../components/Subheader'
+import Categories from '../components/Categories'
 import Banner from '../components/Banner'
 import PartnerLogos from '../components/PartnerLogos'
 import Footer from '../components/Footer'
-const Home = () => {
+
+const Home = (props) => {
+
     return (
+
         <div>
               <HomeBanner />
               <Subheader title={'Featured Shops'}
