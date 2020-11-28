@@ -47,7 +47,7 @@ const ChatRoom = (props) => {
 
   return (
     <>
-      <main>
+      <main className="main-chat">
         {messages &&
           messages.map((msg) => (
             <ChatMessage auth={auth} key={msg.id} message={msg} />
@@ -56,14 +56,17 @@ const ChatRoom = (props) => {
         <div ref={dummy}></div>
       </main>
 
-      <form onSubmit={sendMessage}>
+      <form className="form-chat" onSubmit={sendMessage}>
         <input
+          className="form-input"
           value={formValue}
           onChange={(e) => {
             setFormValue(e.target.value);
           }}
         />
-        <button type="submit">🕊</button>
+        <button className="form-button" type="submit">
+          🕊
+        </button>
       </form>
     </>
   );
@@ -77,8 +80,8 @@ const ChatMessage = (props) => {
 
   return (
     <div className={`message ${messageClass}`}>
-      <img src={photoURL} />
-      <p>{text}</p>
+      <img className="img-chat" src={photoURL} />
+      <p className="p-message">{text}</p>
     </div>
   );
 };
