@@ -14,7 +14,7 @@ const ShopDetails = (props) => {
         </div>
         <div className='row align-self-center'>
           <img src = {Pin} className='social-icon align-bottom'/>
-          <p>Address Here</p>
+          <p>123 Sampaguita Street, Clarkview, Angeles City, Pampanga</p>
         </div>
         <p className='impt-p'>Service Hours</p>
         <p className='footer-indent'>Wed 11:00 - 11:30</p>
@@ -23,7 +23,7 @@ const ShopDetails = (props) => {
         <div className='col float-right'>
         <div className='rating float-right'>
         <img src= {Rating} />
-        <p className='rating-num'>insert rating here</p>
+        <p className='rating-num'>5.0</p>
         </div>
         </div>
       </div>

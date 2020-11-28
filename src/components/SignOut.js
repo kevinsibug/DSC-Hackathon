@@ -7,7 +7,6 @@ const SignOut = (props) => {
       <button
         onClick={() => {
           auth.signOut();
-          // document.reload();
         }}
       >
         Sign Out
