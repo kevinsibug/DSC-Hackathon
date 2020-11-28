@@ -36,7 +36,7 @@
     transform: rotate(360deg);
   }
 } */
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sarabun:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&Work+Sans&display=swap&Manrope:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sarabun:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&Work+Sans&display=swap&Manrope&display=swap");
 
 root,
 root::before,
@@ -179,7 +179,15 @@ nav .navbar li a {
 .subheader {
   font-family: 'Manrope';
   font-weight: 800;
-  font-color: #6A3C34;
+  color: #6A3C34 !important;
+  text-align: center;
+  padding-top: 2em;
+}
+
+.subheader-desc {
+  font-family: 'Sarabun';
+  text-align: center;
+  padding-bottom: 2em;
 }
 
 .banner {
