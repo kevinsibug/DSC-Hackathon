@@ -15,14 +15,14 @@ const Home = (props) => {
     return (
 
         <div>
-              <HomeBanner />
+              <HomeBanner {...props} />
               <Subheader title={'Featured Shops'}
               desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '}/>
 
               <Featured firestore = {props.firestore}/>
               <Subheader title={'Categories'}
               desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '}/>
-              <Categories firestore = {firestore}/>
+              <Categories {...props} firestore = {firestore}/>
               <br />
               <br />
               <Banner title={'Share to the cause— set up your shop'}

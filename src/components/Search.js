@@ -1,5 +1,7 @@
 import React, {useState, useContext} from "react";
 
+import { withRouter } from 'react-router';
+
 import ListingContext from "../context/listingContext";
 const Search = (props) => {
 
@@ -23,9 +25,11 @@ const Search = (props) => {
   }
 
   const onSubmit = (e) => {
+    console.log(e)
     e.preventDefault();
     showText(text);
     showLocation(location);
+    props.history.push('/shops');
   }
 
   return (
