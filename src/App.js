@@ -35,7 +35,6 @@ function App() {
   const query = shopsRef.orderBy("createdAt").limit(25);
 
   const [shops] = useCollectionData(shopsRef, { idField: "id" });
-  console.log(shops);
 
   return (
     <ListingState>
@@ -43,7 +42,7 @@ function App() {
         <div className="App container">
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/shops" render = {props => <Shops listings = {shops}/>}/>
+            <Route exact path="/shops" render = {props => <Shops firestore = {firestore} listings = {shops}/>}/>
           </Switch>
         </div>
       </Router>
