@@ -1,19 +1,43 @@
-import React from "react";
+import React, {useState, useContext} from "react";
 
+import ListingContext from "../context/listingContext";
 const Search = () => {
+  const listingContext = useContext(ListingContext);
+  const {showText, showLocation} = listingContext
+
+  const [text, setText] = useState("");
+  const [location, setLocation] = useState("");
+
+  const onChangeText = (e) => {
+    setText(e.target.value);
+
+
+  }
+
+  const onChangeLocation = (e) => {
+    setLocation(e.target.value);
+  }
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    showText(text);
+    showLocation(location);
+  }
+
   return (
+
     <div className= 'd-flex justify-content-center'>
-    <div className="search form-row">
+    <form className="search form-row"  onSubmit = {onSubmit}>
       <div className="col">
-        <input className = "form-controlA" placeholder="    What are you looking for?"></input>
+        <input onChange = {onChangeText} className = "form-controlA" placeholder="What are you looking for?"></input>
       </div>
 
       <div className="col">
-        <input className = "form-controlB" placeholder="    Location"></input>
+        <input onChange = {onChangeLocation} className = "form-controlB" placeholder="Enter your Location"></input>
       </div>
 
       <input className = "search-button" type="Submit" value="SEARCH"></input>
-    </div>
+    </form>
     </div>
   );
 };
