@@ -1,8 +1,8 @@
 import {
     SHOW_CATEGORY,
-    REVIEW_LISTING,
-    CHAT_LISTING,
-    SET_LOADING,
+    RESET_CATEGORY,
+    SHOW_TEXT,
+    SHOW_LOCATION,
   } from "./types";
   
 
@@ -14,11 +14,21 @@ export default (state, action) => {
                 category: action.payload,
                 loading: false,
             }
-        // case SET_LOADING:
-        //     return {
-        //         ...state,
-        //         loading: true,
-        //     }
+        case RESET_CATEGORY:
+            return {
+                ...state,
+                category: '',
+            }
+        case SHOW_TEXT:
+            return {
+                ...state,
+                text: action.payload,
+            }
+        case SHOW_LOCATION:
+            return {
+                ...state,
+                location: action.payload,
+            }
 
         default:
             return state

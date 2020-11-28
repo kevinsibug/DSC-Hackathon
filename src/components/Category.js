@@ -6,20 +6,23 @@ const Category = (props) => {
   const category = props.values.category;
 
   const listingContext = useContext(ListingContext);
-  const { showCategory } = listingContext;
+  const { showCategory, resetCategory } = listingContext;
 
   const selectedCategory = listingContext.category;
-  let selected
+  let selected;
 
-  console.log(category, selectedCategory)
   if (category === selectedCategory) {
     selected = "selected";
   } else {
-      selected = "unselected";
+    selected = "unselected";
   }
 
   const onClick = (e) => {
-    showCategory(category);
+    if (category != listingContext.category) {
+        showCategory(category);
+    } else {
+        resetCategory();
+    }
   };
   return (
     <div className="category">
@@ -27,7 +30,7 @@ const Category = (props) => {
         onClick={onClick}
         data-value={category}
         src={`/images/categories/${category.split(" ")[0].toLowerCase()}.png`}
-        className = {`category-image ${selected}`}
+        className={`category-image ${selected}`}
       ></img>
     </div>
   );

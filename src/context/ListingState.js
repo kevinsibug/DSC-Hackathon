@@ -3,14 +3,16 @@ import ListingContext from "./listingContext";
 import ListingReducer from "./listingReducer";
 import {
   SHOW_CATEGORY,
-  REVIEW_LISTING,
-  CHAT_LISTING,
-  SET_LOADING,
+  RESET_CATEGORY,
+  SHOW_TEXT,
+  SHOW_LOCATION,
 } from "./types";
 
 const ListingState = (props) => {
   const initialState = {
     category: "",
+    text: "",
+    location: "",
     loading: false,
   };
   const [state, dispatch] = useReducer(ListingReducer, initialState);
@@ -23,18 +25,40 @@ const ListingState = (props) => {
     });
   };
 
-  //Review Listing
+  //Reset Category
+  const resetCategory = () => {
+    dispatch({
+      type: RESET_CATEGORY,
+    });
+  }
 
-  //Chat Listing
+  //Show Text
+  const showText = (text) => {
+    dispatch({
+      type: SHOW_TEXT,
+      payload: text,
+    });
+  }
 
   //Set Loading
+  const showLocation = (text) => {
+    dispatch({
+      type: SHOW_LOCATION,
+      payload: text,
+    });
+  }
 
   return (
     <ListingContext.Provider
       value={{
         category: state.category,
         loading: state.loading,
-        showCategory
+        text: state.text,
+        location: state.location,
+        showCategory,
+        resetCategory,
+        showText,
+        showLocation
       }}
     >
       {props.children}

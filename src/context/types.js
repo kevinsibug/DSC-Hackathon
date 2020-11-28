@@ -1,4 +1,4 @@
 export const SHOW_CATEGORY = 'SHOW_CATEGORY';
-export const REVIEW_LISTING = 'REVIEW_LISTING';
-export const CHAT_LISTING = 'CHAT_LISTING';
-export const SET_LOADING = 'SET_LOADING';
+export const RESET_CATEGORY = 'RESET_CATEGORY';
+export const SHOW_TEXT = 'SHOW_TEXT';
+export const SHOW_LOCATION = 'SHOW_LOCATION';
