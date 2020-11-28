@@ -3,11 +3,11 @@ import React from "react";
 const Search = () => {
   return (
     <div className="search form-row">
-      <div class="col">
+      <div className="col">
         <input className = "form-control" placeholder="What are you looking for?"></input>
       </div>
 
-      <div class="col">
+      <div className="col">
         <input className = "form-control" placeholder="Location"></input>
       </div>
 

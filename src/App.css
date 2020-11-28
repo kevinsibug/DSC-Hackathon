@@ -108,4 +108,14 @@ nav .navbar li a {
 }
 .categories .category .category-image{
   cursor: pointer;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
+.selected{
+  transform: scale(1.2);
+}
+
+.unselected {
+  transform: scale(1);
 }
