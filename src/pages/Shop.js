@@ -22,10 +22,10 @@ const Shop = (props) => {
   }
   return (
     <div>
-      <Header />
+      <Header /> 
       <SignOut firestore={firestore} auth={auth} user={props.match.params.name} />
       <img style = {{cursor: 'pointer'}}src = {`/images/Chat.png`} onClick = {onClick}></img>
-      {opened && user ? <ChatRoom firestore={firestore} auth={auth} user={props.match.params.name} /> : <SignIn firestore={firestore} auth={auth} user={props.match.params.name}/>}
+      { user ? opened && <ChatRoom firestore={firestore} auth={auth} user={props.match.params.name} /> : <SignIn firestore={firestore} auth={auth} user={props.match.params.name}/>}
     </div>
   );
 };
