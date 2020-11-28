@@ -14,7 +14,7 @@ const Shops = (props) => {
   return (
     <div>
       <Header />
-      <Search />
+      <Search isShops = {true}/>
       <Categories firestore = {firestore}/>
       <Listing firestore = {firestore} listings={listings} />
     </div>

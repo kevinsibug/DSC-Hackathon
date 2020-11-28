@@ -169,6 +169,10 @@ nav .navbar li a {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
 }
 
+.shops-search {
+  margin: 5rem 0 3.052rem ;
+}
+
 
 .listing {
   cursor: pointer;
