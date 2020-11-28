@@ -6,8 +6,11 @@ const ShopDetails = (props) => {
     return (
       <div className='row'>
         <div className='col'>
-        <div>
+        <div className='row'>
           <h1 className='shop-header'>{props.title}</h1>
+          <div className='tag-content'>
+            FOOD
+          </div>
         </div>
         <div className='row align-self-center'>
           <img src = {Pin} className='social-icon align-bottom'/>

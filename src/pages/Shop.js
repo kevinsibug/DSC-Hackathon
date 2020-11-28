@@ -25,7 +25,8 @@ const Shop = (props) => {
       <Vouchers />
       <SubheaderShop title={'Products'}
       desc={'Pick from our specialties, to be delivered to your doorstep freshly-made.'}/>
-      <ShopBanner />
+      <ShopBanner title={'On the dot delivery'}
+      desc={'Craving for something and want it delivered in an instant? Crown Bakery guarantees a 60 minute delivery if you are within 10km the proximity of the shop! Enjoy the treats and wonders of a filipino-style cuisine delivered to you in a flash.'}/>
       <SubheaderShopB title={'Order Via'} desc={''} />
       <ShopContact />
       <SubheaderShopB title={'Location'}desc={''}/>

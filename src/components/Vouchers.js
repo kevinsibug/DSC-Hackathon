@@ -4,7 +4,7 @@ import Tag from '../static/tag.svg'
 
 const Vouchers = (props) => {
     return (
-        <div className='row'>
+        <div className='row justify-content-center'>
           <div className='card'>
             <div className= 'row'>
               <div className='col-8'>
@@ -16,11 +16,11 @@ const Vouchers = (props) => {
                   </div>
                 </div>
               <div className='col-4'>
-                <input className = "claim-button float-right" type="Submit" value="SEARCH"></input>
+                <input className = "claim-button float-right" type="Submit" value="CLAIM"></input>
             </div>
           </div>
           </div>
-          <div className='card'>
+          <div className='cardB'>
             <div className= 'row'>
             <div className='col-8'>
                 <div className  = "row voucher-row">
@@ -31,7 +31,7 @@ const Vouchers = (props) => {
                 </div>
               </div>
             <div className='col-4'>
-              <input className = "claim-button float-right" type="Submit" value="SEARCH"></input>
+              <input className = "claim-button float-right" type="Submit" value="CLAIM"></input>
           </div>
             </div>
           </div>

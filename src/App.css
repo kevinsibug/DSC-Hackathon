@@ -389,6 +389,7 @@ nav .sub-navbar li a {
   font-weight: 800;
   color: #6A3C34 !important;
   padding-top: 1em;
+  margin-bottom: 0 !important;
 }
 
 .impt-p{
@@ -418,9 +419,23 @@ nav .sub-navbar li a {
 .card {
   width: 40%;
   height: 10em;
-  border-radius: 10px;
+  border: 2px !important;
+  border-color: #6a3c34 !important;
+  border-radius: 10px !important;
   margin-right: 2em;
   margin-bottom: 2em;
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.1);
+}
+
+.cardB {
+  width: 40%;
+  height: 10em;
+  border: 2px !important;
+  border-color: #6a3c34 !important;
+  border-radius: 10px !important;
+  margin-right: 0;
+  margin-bottom: 2em;
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.1);
 }
 
 .center {
@@ -430,13 +445,13 @@ nav .sub-navbar li a {
 }
 
 .claim-button {
-  background-color: #6a3c34;
-  color: white;
+  background-color: #FFBE55;
+  color: #6a3c34;
   padding: 0.8rem 1.563rem;
   border-radius: 10px;
   border: none;
   font-family: 'Work Sans';
-  font-weight: 200;
+  font-weight: normal;
   margin-top: 3.5em;
   margin-right: 2em;
 }
@@ -471,6 +486,16 @@ nav .sub-navbar li a {
   padding-left: 1em;
 }
 
+.tag-content{
+  background-color: #94C3AF;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  margin-left: 1em;
+  padding: 0.25em 0.75em;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #FCFFFE;
+}
 
 footer{
   background-color: #6A3C34;
