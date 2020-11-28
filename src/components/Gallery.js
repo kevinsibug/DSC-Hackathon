@@ -9,16 +9,16 @@ const Gallery = (props) => {
     return (
       <div>
         <SearchNav />
-          <div className='row'>
-          <div className='col-7'>
+          <div className='gallery'>
+          <div className='gallery-main'>
             <img src = {image1} />
           </div>
 
-          <div className='col-3'>
-            <div className='row'>
+          <div className='gallery-right'>
+            <div className='gallery-right-item'>
               <img src = {image2} />
             </div>
-            <div className='row'>
+            <div className='gallery-right-item'>
               <img src = {image3} />
             </div>
           </div>

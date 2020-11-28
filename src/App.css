@@ -575,9 +575,23 @@ nav .sub-navbar li a {
   margin-bottom: 1em !important;
 }
 .gallery {
-  
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
 }
 
+.gallery-main {
+  margin-right: 1rem;
+}
+.gallery-item {
+  margin: 1rem 0;
+}
+
+.gallery-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .rating-number {
   font-family: "Sarabun";
   font-weight: normal;
