@@ -205,10 +205,27 @@ nav .navbar li a {
   font-family: 'Work Sans';
 }
 
+.partner-logos{
+  padding-bottom: 4em;
+}
+
+.partner-logo{
+  height: 10em;
+  padding-right: 3em;
+  padding-bottom: 3em;
+}
+
+.partner-logo-edge{
+  height: 10em;
+  padding-right: 0;
+  padding-bottom: 3em;
+}
+
 footer{
   background-color: #6A3C34;
   width: 100%;
   left: 0;
   position: absolute;
   z-index: -1;
+  padding-top: 4em;
 }

@@ -8,16 +8,16 @@ import TeaChiCo from '../static/tea-chi-co.png'
 
 const PartnerLogos = (props) => {
     return (
-        <div>
-          <div>
-          <img src = {CrownBakery} />
-          <img src = {LaFleur} />
-          <img src = {ModaHome} />
-          <img src = {Ekko} />
+        <div className='partner-logos'>
+          <div className='d-flex justify-content-center'>
+          <img src = {CrownBakery} class='partner-logo'/>
+          <img src = {LaFleur} class='partner-logo' />
+          <img src = {ModaHome} class='partner-logo' />
+          <img src = {Ekko} class='partner-logo-edge'/>
           </div>
-          <div>
-          <img src = {CraftsPaperie} />
-          <img src = {TeaChiCo} />
+          <div className='d-flex justify-content-center'>
+          <img src = {CraftsPaperie} class='partner-logo'/>
+          <img src = {TeaChiCo} class='partner-logo-edge'/>
           </div>
         </div>
     )
