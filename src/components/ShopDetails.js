@@ -10,7 +10,7 @@ const ShopDetails = (props) => {
           <h1 className='shop-header'>{props.title}</h1>
         </div>
         <div className='row align-self-center'>
-          <img src = {Pin} className='social-icon'/>
+          <img src = {Pin} className='social-icon align-bottom'/>
           <p>Address Here</p>
         </div>
         <p className='impt-p'>Service Hours</p>

@@ -6,6 +6,7 @@ import ListingContext from "../context/listingContext";
 
 import Header from "../components/Header";
 import Gallery from "../components/Gallery";
+import Vouchers from "../components/Vouchers";
 import SubheaderShop from '../components/SubheaderShop';
 import SubheaderShopB from '../components/SubheaderShopB';
 import ShopDetails from '../components/ShopDetails';
@@ -21,6 +22,7 @@ const Shop = (props) => {
       <ShopDetails title={'Crown Bakery'}/>
       <SubheaderShop title={'Shop Vouchers'}
       desc={'Here’s a little treat, check out these vouchers.'}/>
+      <Vouchers />
       <SubheaderShop title={'Products'}
       desc={'Pick from our specialties, to be delivered to your doorstep freshly-made.'}/>
       <ShopBanner />
