@@ -23,6 +23,7 @@ const Category = (props) => {
     } else {
         resetCategory();
     }
+    props.history.push('/shops');
   };
   return (
     <div className="category">

@@ -51,7 +51,7 @@ body {
 }
 
 header {
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 3.052rem;
@@ -68,17 +68,14 @@ ul {
   margin-left: 0 !important;
 }
 
-
-
-.logo-home{
-    text-decoration: none;
-    color: #6a3c34;
-
+.logo-home {
+  text-decoration: none;
+  color: #6a3c34;
 }
 
-.logo-home:hover{
-    text-decoration: none;
-    color: #6a3c34;
+.logo-home:hover {
+  text-decoration: none;
+  color: #6a3c34;
 }
 
 .container {
@@ -97,15 +94,15 @@ ul {
 
 .home-logo {
   font-family: "DM Serif Display", serif;
-  color: #FFF5E1;
+  color: #fff5e1;
   font-size: 5rem;
   text-align: center;
   line-height: 1em;
 }
 
-.tagline{
-  font-family: 'Sarabun';
-  color: #FFF5E1;
+.tagline {
+  font-family: "Sarabun";
+  color: #fff5e1;
   font-weight: 200;
   font-size: 1.25rem;
   text-align: center;
@@ -132,7 +129,7 @@ nav .navbar-shops li a {
 
 .footer-logo {
   font-family: "DM Serif Display", serif;
-  color: #FFF5E1;
+  color: #fff5e1;
   font-size: 3.052rem;
 }
 
@@ -148,11 +145,9 @@ nav {
   padding-bottom: 4em;
 }
 
-
 .sub-nav {
   padding: 0;
 }
-
 
 nav .navbar li {
   list-style-type: none;
@@ -166,7 +161,7 @@ nav .navbar li a {
   text-decoration: none;
   font-family: "Sarabun", sans-serif;
   letter-spacing: 1.2px;
-  color: #FFF5E1;
+  color: #fff5e1;
 }
 
 nav .sub-navbar li {
@@ -181,19 +176,19 @@ nav .sub-navbar li a {
   text-decoration: none;
   font-family: "Sarabun", sans-serif;
   letter-spacing: 1.2px;
-  color: #FFF5E1;
+  color: #fff5e1;
 }
 
-.navbar-items{
+.navbar-items {
   color: #6a3c34 !important;
 }
 
-.navbar-logo{
+.navbar-logo {
   padding-right: 120em;
 }
 
-.home-banner{
-  background: url('./static/home-banner.png');
+.home-banner {
+  background: url("./static/home-banner.png");
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -210,7 +205,6 @@ nav .sub-navbar li a {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
 }
 
-
 .search-nav {
   display: flex;
   align-items: center;
@@ -218,14 +212,11 @@ nav .sub-navbar li a {
   margin-top: 2rem;
   margin-bottom: 2rem;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
-
 }
-
 
 .listing {
   cursor: pointer;
 }
-
 
 .form-controlA {
   height: 3.052rem;
@@ -248,7 +239,7 @@ nav .sub-navbar li a {
   padding: 0.8rem 1.563rem;
   border-radius: 0px 10px 10px 0px;
   border: none;
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   font-weight: 200;
 }
 .categories {
@@ -259,7 +250,7 @@ nav .sub-navbar li a {
 .categories .category {
   margin: 1rem;
 }
-.categories .category .category-image{
+.categories .category .category-image {
   cursor: pointer;
   max-width: 350px;
   width: 100%;
@@ -269,7 +260,7 @@ nav .sub-navbar li a {
   background-color: white;
 }
 
-.selected{
+.selected {
   transform: scale(1.2);
 }
 
@@ -278,34 +269,34 @@ nav .sub-navbar li a {
 }
 
 .subheader {
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-weight: 800;
-  color: #6A3C34 !important;
+  color: #6a3c34 !important;
   text-align: center;
   padding-top: 2em;
 }
 
 .subheader-desc {
-  font-family: 'Sarabun';
+  font-family: "Sarabun";
   text-align: center;
   padding-bottom: 1em;
 }
 
 .subheader-shop {
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-weight: 800;
-  color: #6A3C34 !important;
+  color: #6a3c34 !important;
   padding-top: 0.5em;
 }
 
 .subheader-desc-shop {
-  font-family: 'Sarabun';
+  font-family: "Sarabun";
   padding-bottom: 1em;
 }
 
 .banner {
-  font-family: 'DM Serif Display';
-  color: #6A3C34 !important;
+  font-family: "DM Serif Display";
+  color: #6a3c34 !important;
   font-size: 3em;
   padding-top: 1.5em;
   padding-left: 10em;
@@ -314,11 +305,11 @@ nav .sub-navbar li a {
 .banner-desc {
   padding-top: 10vh;
   padding-right: 18em;
-  font-color: #6A3C34 !important;
+  font-color: #6a3c34 !important;
 }
 
-.banner-photo{
-  background: url('./static/banner-photo.png');
+.banner-photo {
+  background: url("./static/banner-photo.png");
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -327,8 +318,8 @@ nav .sub-navbar li a {
   height: 20em;
 }
 
-.banner-photo-shop{
-  background: url('./static/voucher-bg.png');
+.banner-photo-shop {
+  background: url("./static/voucher-bg.png");
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -339,25 +330,25 @@ nav .sub-navbar li a {
 
 .button {
   background-color: #6a3c34;
-  color: #FFF5E1;
+  color: #fff5e1;
   padding: 0.5rem 3.5rem;
   border-radius: 6px;
   border: none;
   font-weight: 400;
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
 }
 
-.partner-logos{
+.partner-logos {
   padding-bottom: 4em;
 }
 
-.partner-logo{
+.partner-logo {
   height: 10em;
   padding-right: 3em;
   padding-bottom: 3em;
 }
 
-.partner-logo-edge{
+.partner-logo-edge {
   height: 10em;
   padding-right: 0;
   padding-bottom: 3em;
@@ -368,70 +359,101 @@ nav .sub-navbar li a {
   height: 2em;
 }
 
-.footer-indent{
+.footer-indent {
   padding-left: 4em;
 }
 
 .links {
   text-decoration: none;
-  color: #FFF5E1;
+  color: #fff5e1;
 }
 
 .links:hover {
   text-decoration: none;
-  color: #FFF5E1;
+  color: #fff5e1;
 }
 
-.image-1{
-  background: url('./static/image-1.png');
+.image-1 {
+  background: url("./static/image-1.png");
 }
-.image-2{
-  background: url('./static/image-2.png');
+.image-2 {
+  background: url("./static/image-2.png");
 }
-.image-3{
-  background: url('./static/image-3.png');
+.image-3 {
+  background: url("./static/image-3.png");
 }
 
-.contact-padding{
+.contact-padding {
   padding-right: 4em;
   display: inline;
 }
 
-.contact-paddingB{
+.contact-paddingB {
   padding-right: 0;
   display: inline;
 }
 
-.shop-header{
-  font-family: 'Manrope';
+.shop-header {
+  font-family: "Manrope";
   font-weight: 800;
-  color: #6A3C34 !important;
+  color: #6a3c34 !important;
   padding-top: 1em;
   margin-bottom: 0 !important;
 }
 
-.impt-p{
-  color: #6A3C34 !important;
+.impt-p {
+  color: #6a3c34 !important;
   font-weight: bold;
 }
 
-.shop-tagline{
-    padding-top: 1em;
-    padding-bottom: 1em;
-    font-style: italic;
+.shop-tagline {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-style: italic;
 }
 
 .rating {
   padding-top: 2.25em;
 }
 
-.rating-num{
+.rating-num {
   padding-top: 1em;
   text-align: right;
 }
 
-.col{
+.col {
   padding: 0 !important;
+}
+
+.card-category {
+  
+  padding: 0.8rem 1.25rem;
+  display: inline-block;
+  border-radius: 4px;
+  color: black;
+  font-weight: 800;
+  font-family: Manrope;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.food {
+  background-color: #94c3af;
+}
+.clothes {
+  background-color: #FFF596;
+}
+.arts {
+  background-color: #FFBE55;
+}
+.gardening {
+  background-color: #6979F8;
+}
+.services {
+  background-color: #FF93AB;
+}
+.others {
+  background-color: #EF7171;
 }
 
 .cardA {
@@ -442,7 +464,7 @@ nav .sub-navbar li a {
   border-radius: 10px !important;
   margin-right: 2em;
   margin-bottom: 2em;
-  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
 }
 
 .cardB {
@@ -453,7 +475,7 @@ nav .sub-navbar li a {
   border-radius: 10px !important;
   margin-right: 0;
   margin-bottom: 2em;
-  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
 }
 
 .center {
@@ -463,61 +485,88 @@ nav .sub-navbar li a {
 }
 
 .claim-button {
-  background-color: #FFBE55;
+  background-color: #ffbe55;
   color: #6a3c34;
   padding: 0.8rem 1.563rem;
   border-radius: 10px;
   border: none;
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   font-weight: normal;
   margin-top: 3.5em;
   margin-right: 2em;
 }
 
-.voucher-icon{
+.voucher-icon {
   padding-right: 0.5em;
   height: 2em;
 }
 
-.voucher-title{
-  font-family: 'DM Serif Display';
+.voucher-title {
+  font-family: "DM Serif Display";
   font-weight: normal;
-  color: #6A3C34 !important;
+  color: #6a3c34 !important;
   font-size: 2em;
   margin-bottom: 0 !important;
 }
 
 .voucher-desc {
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-size: 1.25em;
   margin-bottom: 0 !important;
 }
 
 .voucher-date {
-  font-family: 'Sarabun';
+  font-family: "Sarabun";
   font-weight: light;
   text-align: center;
 }
 
-.voucher-row{
+.voucher-row {
   padding-top: 1.5em;
   padding-left: 1em;
 }
 
-.tag-content{
-  background-color: #94C3AF;
+.tag-content {
+  background-color: #94c3af;
   margin-top: 3em;
   margin-bottom: 2em;
   margin-left: 1em;
   padding: 0.25em 0.75em;
   border-radius: 6px;
   font-weight: bold;
-  color: #FCFFFE;
+  color: #fcfffe;
+}
+
+
+.user-pic{
+  height: 5em;
+  padding-left: 4em;
+}
+
+.main-comment{
+  font-family: 'Manrope';
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 0 !important;
+}
+
+.from-rev{
+  height: 2em;
+  margin-bottom: 1em !important;
+}
+
+.rating-number{
+  font-family: 'Sarabun';
+  font-weight: normal;
+  font-size: 2.5em;
+  margin-bottom: 0 !important;
+  padding-right: 1em;
 }
 
 footer{
   background-color: #6A3C34;
   color: #FFF5E1;
+
   width: 100%;
   left: 0;
   position: absolute;

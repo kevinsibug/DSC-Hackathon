@@ -17,7 +17,7 @@ const Shops = (props) => {
 
       <SearchNav />
 
-      <Categories firestore = {firestore}/>
+      <Categories {...props} firestore = {firestore}/>
       <Listing firestore = {firestore} listings={listings} />
     </div>
   );
