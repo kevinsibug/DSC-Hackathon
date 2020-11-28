@@ -1,15 +1,17 @@
 import React from 'react'
 
-import Logo from '../static/Placeholder_Logo.png'
+import Logo from '../static/tindajuan-logo.png'
 import Search from '../components/Search'
 
 const CTA = () => {
     return (
         <div>
-            <img src = {Logo}>
+            <img src = {Logo} class='logo-illus'>
             </img>
-            <h1>TindaJuan</h1>
-            <p>small businesses bridged to every Juan</p>
+            <div className  = "home-logo">
+                TindaJuan
+            </div>
+            <p className='tagline'>small businesses bridged to every Juan</p>
             <Search />
         </div>
     )

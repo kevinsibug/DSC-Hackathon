@@ -3,11 +3,11 @@ import React from 'react'
 const Subheader = (props) => {
     return (
         <div>
-          <div className='subheader'>
-          <h2>{props.title}</h2>
+          <div>
+            <h2 className='subheader'>{props.title}</h2>
           </div>
-          <div className='subheader-desc'>
-          {props.desc}
+          <div>
+            <p  className='subheader-desc'>{props.desc}</p>
           </div>
         </div>
     )
