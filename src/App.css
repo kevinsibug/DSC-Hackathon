@@ -51,26 +51,37 @@ body {
 }
 
 header {
+  width:100%;
   display: flex;
   justify-content: space-between;
   margin-top: 3.052rem;
   align-items: center;
-  position: fixed;
-  top: 0;
+  position: relative;
   left: 0;
 }
 
-.header-shops {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1.563rem;
-  position: relative;
-
-}
-
 ul {
-  padding: 0 !important;
+  margin-bottom: 0 !important
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
+
+
+}
+
+.logo-home{
+    text-decoration: none;
+    color: #6a3c34;
+
+}
+
+.logo-home:hover{
+    text-decoration: none;
+    color: #6a3c34;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -126,13 +137,21 @@ nav .navbar-shops li a {
   font-size: 3.052rem;
 }
 
+.logo-nav {
+  font-family: "DM Serif Display", serif;
+  color: #6a3c34;
+  font-size: 3.052rem;
+  height: 1em;
+}
+
 nav {
   padding-top: 6em;
   padding-bottom: 4em;
 }
 
-.nav-shops {
-  padding: 1rem;
+
+.sub-nav {
+  padding: 0;
 }
 
 
@@ -149,6 +168,29 @@ nav .navbar li a {
   font-family: "Sarabun", sans-serif;
   letter-spacing: 1.2px;
   color: #FFF5E1;
+}
+
+nav .sub-navbar li {
+  list-style-type: none;
+  margin-right: 2em;
+}
+
+nav .sub-navbar li:nth-child(3) {
+  margin-right: 0;
+}
+nav .sub-navbar li a {
+  text-decoration: none;
+  font-family: "Sarabun", sans-serif;
+  letter-spacing: 1.2px;
+  color: #FFF5E1;
+}
+
+.navbar-items{
+  color: #6a3c34 !important;
+}
+
+.navbar-logo{
+  padding-right: 120em;
 }
 
 .home-banner{
@@ -169,8 +211,15 @@ nav .navbar li a {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
 }
 
-.shops-search {
-  margin: 5rem 0 3.052rem ;
+
+.search-nav {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+
 }
 
 
@@ -180,12 +229,12 @@ nav .navbar li a {
 
 
 .form-controlA {
-
   height: 3.052rem;
   width: 25em;
   border-radius: 6px 0px 0px 6px;
   border: none;
 }
+
 .form-controlB {
   height: 3.052rem;
   width: 15em;
@@ -201,6 +250,7 @@ nav .navbar li a {
   border-radius: 0px 10px 10px 0px;
   border: none;
   font-family: 'Work Sans';
+  font-weight: 200;
 }
 .categories {
   display: flex;
@@ -215,7 +265,11 @@ nav .navbar li a {
   max-width: 350px;
   width: 100%;
   height: auto;
+  padding-bottom: 1em;
+  border-radius: 16px;
+  background-color: white;
 }
+
 .selected{
   transform: scale(1.2);
 }
@@ -235,7 +289,19 @@ nav .navbar li a {
 .subheader-desc {
   font-family: 'Sarabun';
   text-align: center;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+.subheader-shop {
+  font-family: 'Manrope';
+  font-weight: 800;
+  color: #6A3C34 !important;
+  padding-top: 0.5em;
+}
+
+.subheader-desc-shop {
+  font-family: 'Sarabun';
+  padding-bottom: 1em;
 }
 
 .banner {
@@ -262,6 +328,15 @@ nav .navbar li a {
   height: 20em;
 }
 
+.banner-photo-shop{
+  background: url('./static/voucher-bg.png');
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+  background-size: cover;
+  height: 20em;
+}
 
 .button {
   background-color: #6a3c34;
@@ -306,6 +381,139 @@ nav .navbar li a {
 .links:hover {
   text-decoration: none;
   color: #FFF5E1;
+}
+
+.image-1{
+  background: url('./static/image-1.png');
+}
+.image-2{
+  background: url('./static/image-2.png');
+}
+.image-3{
+  background: url('./static/image-3.png');
+}
+
+.contact-padding{
+  padding-right: 4em;
+  display: inline;
+}
+
+.contact-paddingB{
+  padding-right: 0;
+  display: inline;
+}
+
+.shop-header{
+  font-family: 'Manrope';
+  font-weight: 800;
+  color: #6A3C34 !important;
+  padding-top: 1em;
+  margin-bottom: 0 !important;
+}
+
+.impt-p{
+  color: #6A3C34 !important;
+  font-weight: bold;
+}
+
+.shop-tagline{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-style: italic;
+}
+
+.rating {
+  padding-top: 2.25em;
+}
+
+.rating-num{
+  padding-top: 1em;
+  text-align: right;
+}
+
+.col{
+  padding: 0 !important;
+}
+
+.card {
+  width: 40%;
+  height: 10em;
+  border: 2px !important;
+  border-color: #6a3c34 !important;
+  border-radius: 10px !important;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.1);
+}
+
+.cardB {
+  width: 40%;
+  height: 10em;
+  border: 2px !important;
+  border-color: #6a3c34 !important;
+  border-radius: 10px !important;
+  margin-right: 0;
+  margin-bottom: 2em;
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.1);
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.claim-button {
+  background-color: #FFBE55;
+  color: #6a3c34;
+  padding: 0.8rem 1.563rem;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Work Sans';
+  font-weight: normal;
+  margin-top: 3.5em;
+  margin-right: 2em;
+}
+
+.voucher-icon{
+  padding-right: 0.5em;
+  height: 2em;
+}
+
+.voucher-title{
+  font-family: 'DM Serif Display';
+  font-weight: normal;
+  color: #6A3C34 !important;
+  font-size: 2em;
+  margin-bottom: 0 !important;
+}
+
+.voucher-desc {
+  font-family: 'Manrope';
+  font-size: 1.25em;
+  margin-bottom: 0 !important;
+}
+
+.voucher-date {
+  font-family: 'Sarabun';
+  font-weight: light;
+  text-align: center;
+}
+
+.voucher-row{
+  padding-top: 1.5em;
+  padding-left: 1em;
+}
+
+.tag-content{
+  background-color: #94C3AF;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  margin-left: 1em;
+  padding: 0.25em 0.75em;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #FCFFFE;
 }
 
 footer{

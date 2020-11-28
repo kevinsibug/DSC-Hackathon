@@ -40,7 +40,9 @@ function App() {
           <Switch>
             <Route exact path="/" render = {props => <Home firestore = {firestore} />}/>
             <Route exact path="/shops" render = {props => <Shops firestore = {firestore} />}/>
+
             <Route exact path="/shops/:name" render = {props => <Shop {...props} firestore = {firestore} user = {user} auth = {auth} />}/>
+
           </Switch>
         </div>
       </Router>
