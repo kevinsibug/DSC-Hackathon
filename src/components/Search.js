@@ -25,17 +25,20 @@ const Search = () => {
   }
 
   return (
+
+    <div className= 'd-flex justify-content-center'>
     <form className="search form-row"  onSubmit = {onSubmit}>
       <div className="col">
-        <input onChange = {onChangeText} className = "form-control" placeholder="What are you looking for?"></input>
+        <input onChange = {onChangeText} className = "form-controlA" placeholder="What are you looking for?"></input>
       </div>
 
       <div className="col">
-        <input onChange = {onChangeLocation} className = "form-control" placeholder="Enter your Location"></input>
+        <input onChange = {onChangeLocation} className = "form-controlB" placeholder="Enter your Location"></input>
       </div>
 
-      <input className = "search-button" type="Submit" defaultValue="Search"></input>
+      <input className = "search-button" type="Submit" value="SEARCH"></input>
     </form>
+    </div>
   );
 };
 
