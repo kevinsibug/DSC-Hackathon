@@ -7,6 +7,7 @@ import ListingContext from "../context/listingContext";
 import Header from "../components/Header";
 import Gallery from "../components/Gallery";
 import SubheaderShop from '../components/SubheaderShop';
+import SubheaderShopB from '../components/SubheaderShopB';
 import ShopDetails from '../components/ShopDetails';
 import ShopContact from '../components/ShopContact';
 import ShopBanner from '../components/ShopBanner';
@@ -23,9 +24,9 @@ const Shop = (props) => {
       <SubheaderShop title={'Products'}
       desc={'Pick from our specialties, to be delivered to your doorstep freshly-made.'}/>
       <ShopBanner />
-      <SubheaderShop title={'Order Via'} desc={''} />
+      <SubheaderShopB title={'Order Via'} desc={''} />
       <ShopContact />
-      <SubheaderShop title={'Location'}desc={''}/>
+      <SubheaderShopB title={'Location'}desc={''}/>
       <ShopLocation />
       <SubheaderShop title={'Reviews'}desc={''}/>
     </div>

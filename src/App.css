@@ -379,6 +379,11 @@ nav .sub-navbar li a {
   display: inline;
 }
 
+.contact-paddingB{
+  padding-right: 0;
+  display: inline;
+}
+
 .shop-header{
   font-family: 'Manrope';
   font-weight: 800;

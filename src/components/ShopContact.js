@@ -6,7 +6,7 @@ import Phone from '../static/smartphone-brown.svg'
 
 const ShopContact = () => {
     return (
-          <div className='socials row'>
+          <div className='socials row justify-content-center'>
             <div className='row'>
             <div className='row'>
               <img src = {Facebook} className='social-icon'/>
@@ -24,7 +24,7 @@ const ShopContact = () => {
             </div>
             <div className='row'>
               <img src = {Mail} className='social-icon'/>
-              <p className='contact-padding'>tindajuan@gmail.com</p>
+              <p className='contact-paddingB'>tindajuan@gmail.com</p>
             </div>
             </div>
             </div>
