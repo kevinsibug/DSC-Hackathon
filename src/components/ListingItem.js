@@ -17,6 +17,7 @@ const ListingItem = (props) => {
     setShop(name)
   };
 
+
   return (
     <div className="col-md-4 listing" data-shop={name} onClick={onClick}>
       <div className="card mb-4 shadow-sm" data-shop={name}>
@@ -42,7 +43,7 @@ const ListingItem = (props) => {
           <p className="card-text" data-shop={name}>
             {description}
           </p>
-          <p className="card-text" data-shop={name}>
+          <p className={`card-text card-category ${category}`} data-shop={name}>
             {category}
           </p>
           <div
