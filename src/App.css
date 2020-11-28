@@ -563,6 +563,24 @@ nav .sub-navbar li a {
   padding-right: 1em;
 }
 
+
+.reviews {
+  display: flex;
+  align-items: center;
+}
+
+.reviews p {
+  margin:0 ;
+}
+
+.review-item {
+  display: flex;
+}
+
+.user-pic {
+  padding: 0;
+  margin-right: 3.052rem;
+}
 footer{
   background-color: #6A3C34;
   color: #FFF5E1;

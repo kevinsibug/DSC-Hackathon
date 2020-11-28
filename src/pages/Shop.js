@@ -38,7 +38,7 @@ const Shop = (props) => {
     <div>
       <Header />
       <Gallery />
-      <ShopDetails title={'Crown Bakery'}/>
+      <ShopDetails title={'Juan\'s Paradise'}/>
       <SubheaderShop title={'Shop Vouchers'}
       desc={'Here’s a little treat, check out these vouchers.'}/>
       <Vouchers />
@@ -54,7 +54,7 @@ const Shop = (props) => {
       <ShopReviews />
 
           <SignOut firestore={firestore} auth={auth} user={props.match.params.name} />
-      <img style = {{cursor: 'pointer'}}src = {`/images/Chat.png`} onClick = {onClick}></img>
+      <img className = "chat-trigger" style = {{cursor: 'pointer'}}src = {`/images/Chat.png`} onClick = {onClick}></img>
       { user ? opened && <ChatRoom firestore={firestore} auth={auth} user={props.match.params.name} /> : <SignIn firestore={firestore} auth={auth} user={props.match.params.name}/>}
 
       {shopSelected &&
