@@ -16,6 +16,7 @@ import ShopDetails from '../components/ShopDetails';
 import ShopContact from '../components/ShopContact';
 import ShopBanner from '../components/ShopBanner';
 import ShopLocation from '../components/ShopLocation';
+import ShopReviews from '../components/ShopReviews';
 
 const Shop = (props) => {
   const {firestore, auth } = props;
@@ -35,10 +36,6 @@ const Shop = (props) => {
   }
   return (
     <div>
-
-
-
-
       <Header />
       <Gallery />
       <ShopDetails title={'Crown Bakery'}/>
@@ -53,9 +50,10 @@ const Shop = (props) => {
       <ShopContact />
       <SubheaderShopB title={'Location'}desc={''}/>
       <ShopLocation />
-      <SubheaderShop title={'Reviews'}desc={''}/>
-    
-      <SignOut firestore={firestore} auth={auth} user={props.match.params.name} />
+      <SubheaderShopB title={'Reviews'}desc={''}/>
+      <ShopReviews />
+
+          <SignOut firestore={firestore} auth={auth} user={props.match.params.name} />
       <img style = {{cursor: 'pointer'}}src = {`/images/Chat.png`} onClick = {onClick}></img>
       { user ? opened && <ChatRoom firestore={firestore} auth={auth} user={props.match.params.name} /> : <SignIn firestore={firestore} auth={auth} user={props.match.params.name}/>}
 
