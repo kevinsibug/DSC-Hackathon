@@ -14,7 +14,9 @@ const Shops = (props) => {
   return (
     <div>
       <Header />
+
       <SearchNav />
+
       <Categories firestore = {firestore}/>
       <Listing firestore = {firestore} listings={listings} />
     </div>

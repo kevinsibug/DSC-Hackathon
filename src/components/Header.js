@@ -4,8 +4,10 @@ import Chevron from '../static/chevron-down-brown.svg';
 
 const Header = () => {
     return (
+
         <header className='row'>
           <div className='col'>
+
             <div className  = "logo">
             <a href='/' className='logo-home'>
               <img src = {LogoNav} class='logo-nav' />
@@ -28,6 +30,7 @@ const Header = () => {
                     <li><a href='/shops'className='navbar-items'>FAQs</a></li>
                   </div>
                   </div>
+
                 </ul>
             </nav>
             </div>

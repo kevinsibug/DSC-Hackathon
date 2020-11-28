@@ -5,9 +5,9 @@ import Subheader from '../components/Subheader'
 import Banner from '../components/Banner'
 import PartnerLogos from '../components/PartnerLogos'
 import Footer from '../components/Footer'
-
-import Listing from "../components/Listing";
+import Featured from '../components/Featured'
 import Categories from "../components/Categories";
+
 
 const Home = (props) => {
   const listings = props.listings;
@@ -18,7 +18,8 @@ const Home = (props) => {
               <HomeBanner />
               <Subheader title={'Featured Shops'}
               desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '}/>
-              <Listing firestore = {firestore} listings={listings} />
+
+              <Featured firestore = {props.firestore}/>
               <Subheader title={'Categories'}
               desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '}/>
               <Categories firestore = {firestore}/>

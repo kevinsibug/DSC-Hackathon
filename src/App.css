@@ -60,13 +60,15 @@ header {
   left: 0;
 }
 
+ul {
+  margin-bottom: 0 !important
+
 .row {
   margin-right: 0 !important;
   margin-left: 0 !important;
 }
 
-ul{
-  margin-bottom: 0 !important;
+
 }
 
 .logo-home{
@@ -116,6 +118,19 @@ ul{
   font-size: 3.052rem;
 }
 
+nav .navbar-shops {
+  display: flex;
+}
+nav .navbar-shops li {
+  list-style-type: none;
+}
+nav .navbar-shops li a {
+  text-decoration: none;
+  font-family: "Sarabun", sans-serif;
+  margin: 0 1.563rem;
+  letter-spacing: 1.2px;
+}
+
 .footer-logo {
   font-family: "DM Serif Display", serif;
   color: #FFF5E1;
@@ -134,9 +149,11 @@ nav {
   padding-bottom: 4em;
 }
 
+
 .sub-nav {
   padding: 0;
 }
+
 
 nav .navbar li {
   list-style-type: none;
@@ -194,6 +211,7 @@ nav .sub-navbar li a {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
 }
 
+
 .search-nav {
   display: flex;
   align-items: center;
@@ -201,6 +219,7 @@ nav .sub-navbar li a {
   margin-top: 2rem;
   margin-bottom: 2rem;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+
 }
 
 

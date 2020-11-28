@@ -1,7 +1,13 @@
 import React, {useState, useContext} from "react";
 
 import ListingContext from "../context/listingContext";
-const Search = () => {
+const Search = (props) => {
+
+  const {isShops} = props; 
+  let styling = ""
+  if (isShops) {
+    styling= "shops-search";
+  } 
   const listingContext = useContext(ListingContext);
   const {showText, showLocation} = listingContext
 
@@ -25,7 +31,7 @@ const Search = () => {
   return (
 
     <div className= 'd-flex justify-content-center'>
-    <form className="search form-row"  onSubmit = {onSubmit}>
+    <form className={`search form-row ${styling}`}  onSubmit = {onSubmit}>
       <div className="col">
         <input onChange = {onChangeText} className = "form-controlA" placeholder="    What are you looking for?"></input>
       </div>
@@ -34,7 +40,7 @@ const Search = () => {
         <input onChange = {onChangeLocation} className = "form-controlB" placeholder="    Enter your Location"></input>
       </div>
 
-      <input className = "search-button" type="Submit" value="SEARCH"></input>
+      <input className = "search-button" type="Submit" defaultValue="SEARCH"></input>
     </form>
     </div>
   );
