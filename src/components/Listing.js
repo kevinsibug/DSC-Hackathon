@@ -24,6 +24,7 @@ const Listing = (props) => {
     shopsRef = shopsRef.where("keywords", "array-contains", text);
   }
 
+
   [listings] = useCollectionData(shopsRef, { idField: "id" });
   return (
     <main role="main">

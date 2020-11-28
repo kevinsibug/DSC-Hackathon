@@ -55,7 +55,7 @@ const Shop = (props) => {
       <ShopLocation />
       <SubheaderShop title={'Reviews'}desc={''}/>
     
-          <SignOut firestore={firestore} auth={auth} user={props.match.params.name} />
+      <SignOut firestore={firestore} auth={auth} user={props.match.params.name} />
       <img style = {{cursor: 'pointer'}}src = {`/images/Chat.png`} onClick = {onClick}></img>
       { user ? opened && <ChatRoom firestore={firestore} auth={auth} user={props.match.params.name} /> : <SignIn firestore={firestore} auth={auth} user={props.match.params.name}/>}
 
