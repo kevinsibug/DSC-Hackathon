@@ -581,6 +581,10 @@ nav .sub-navbar li a {
   padding: 0;
   margin-right: 3.052rem;
 }
+
+.chat-trigger {
+  float: right;
+}
 footer{
   background-color: #6A3C34;
   color: #FFF5E1;

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState,useRef} from "react";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import { useAuthState } from "react-firebase-hooks/auth";
 import SignIn from "../components/SignIn";
@@ -33,7 +33,14 @@ const Shop = (props) => {
     } else {
       setOpened(true)
     }
+
+    if (dummy.current) {
+      dummy.current.scrollIntoView({ behavior: "smooth" });
+    }
+
   }
+
+  const dummy = useRef();
   return (
     <div>
       <Header />
@@ -55,12 +62,12 @@ const Shop = (props) => {
 
           <SignOut firestore={firestore} auth={auth} user={props.match.params.name} />
       <img className = "chat-trigger" style = {{cursor: 'pointer'}}src = {`/images/Chat.png`} onClick = {onClick}></img>
-      { user ? opened && <ChatRoom firestore={firestore} auth={auth} user={props.match.params.name} /> : <SignIn firestore={firestore} auth={auth} user={props.match.params.name}/>}
+      { user ? opened && <div ref={dummy} className = "chat-room"> <ChatRoom firestore={firestore} auth={auth} user={props.match.params.name} /> </div>: <SignIn firestore={firestore} auth={auth} user={props.match.params.name}/>}
 
-      {shopSelected &&
+      {/* {shopSelected &&
               shopSelected.map((value, index) => (
                 <Rating key={index} details={value} />
-              ))}
+              ))} */}
 
     </div>
   );
