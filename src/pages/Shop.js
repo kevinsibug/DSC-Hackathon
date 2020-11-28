@@ -9,6 +9,8 @@ import Gallery from "../components/Gallery";
 import SubheaderShop from '../components/SubheaderShop';
 import ShopDetails from '../components/ShopDetails';
 import ShopContact from '../components/ShopContact';
+import ShopBanner from '../components/ShopBanner';
+import ShopLocation from '../components/ShopLocation';
 const Shop = (props) => {
 
   return (
@@ -16,16 +18,16 @@ const Shop = (props) => {
       <Header />
       <Gallery />
       <ShopDetails title={'Crown Bakery'}/>
-      <SubheaderShop title={'For You'}
-      desc={'Here’s a little treat for you, hurry and claim those vouchers!'}/>
+      <SubheaderShop title={'Shop Vouchers'}
+      desc={'Here’s a little treat, check out these vouchers.'}/>
       <SubheaderShop title={'Products'}
       desc={'Pick from our specialties, to be delivered to your doorstep freshly-made.'}/>
+      <ShopBanner />
       <SubheaderShop title={'Order Via'} desc={''} />
       <ShopContact />
-      <SubheaderShop title={'Location'}
-      desc={''}/>
-      <SubheaderShop title={'Reviews'}
-      desc={''}/>
+      <SubheaderShop title={'Location'}desc={''}/>
+      <ShopLocation />
+      <SubheaderShop title={'Reviews'}desc={''}/>
     </div>
   );
 };

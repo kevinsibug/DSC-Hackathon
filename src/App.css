@@ -277,7 +277,7 @@ nav .sub-navbar li a {
   font-family: 'Manrope';
   font-weight: 800;
   color: #6A3C34 !important;
-  padding-top: 2em;
+  padding-top: 0.5em;
 }
 
 .subheader-desc-shop {
@@ -309,6 +309,15 @@ nav .sub-navbar li a {
   height: 20em;
 }
 
+.banner-photo-shop{
+  background: url('./static/voucher-bg.png');
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+  background-size: cover;
+  height: 20em;
+}
 
 .button {
   background-color: #6a3c34;
