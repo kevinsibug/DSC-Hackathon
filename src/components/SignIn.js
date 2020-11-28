@@ -10,7 +10,7 @@ const SignIn = (props) => {
     auth.signInWithPopup(provider);
   };
 
-  return <button onClick={signInWithGoogle}> Sign in With Google to Chat</button>;
+  return <button className = "google-button" onClick={signInWithGoogle}> Sign in With Google</button>;
 };
 
 export default SignIn;

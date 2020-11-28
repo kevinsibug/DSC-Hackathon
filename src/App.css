@@ -63,6 +63,28 @@ header {
 ul {
   margin-bottom: 0 !important;
 }
+
+.google-button {
+  background-color: #6a3c34;
+  color: #fff5e1;
+  padding: 0.5rem 3.5rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: 400;
+  font-family: "Work Sans";
+  display: block;
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+.warning-signin {
+  margin: 3.052rem 0;
+}
+
+.warning-message {
+  font-size: 1.052rem;
+  font-weight: 800;
+}
 .row {
   margin-right: 0 !important;
   margin-left: 0 !important;
@@ -426,7 +448,6 @@ nav .sub-navbar li a {
 }
 
 .card-category {
-  
   padding: 0.8rem 1.25rem;
   display: inline-block;
   border-radius: 4px;
@@ -441,19 +462,19 @@ nav .sub-navbar li a {
   background-color: #94c3af;
 }
 .clothes {
-  background-color: #FFF596;
+  background-color: #fff596;
 }
 .arts {
-  background-color: #FFBE55;
+  background-color: #ffbe55;
 }
 .gardening {
-  background-color: #6979F8;
+  background-color: #6979f8;
 }
 .services {
-  background-color: #FF93AB;
+  background-color: #ff93ab;
 }
 .others {
-  background-color: #EF7171;
+  background-color: #ef7171;
 }
 
 .cardA {
@@ -537,32 +558,33 @@ nav .sub-navbar li a {
   color: #fcfffe;
 }
 
-
-.user-pic{
+.user-pic {
   height: 5em;
   padding-left: 4em;
 }
 
-.main-comment{
-  font-family: 'Manrope';
+.main-comment {
+  font-family: "Manrope";
   font-weight: bold;
   font-size: 1.5em;
   margin-bottom: 0 !important;
 }
 
-.from-rev{
+.from-rev {
   height: 2em;
   margin-bottom: 1em !important;
 }
+.gallery {
+  
+}
 
-.rating-number{
-  font-family: 'Sarabun';
+.rating-number {
+  font-family: "Sarabun";
   font-weight: normal;
   font-size: 2.5em;
   margin-bottom: 0 !important;
   padding-right: 1em;
 }
-
 
 .reviews {
   display: flex;
@@ -570,7 +592,7 @@ nav .sub-navbar li a {
 }
 
 .reviews p {
-  margin:0 ;
+  margin: 0;
 }
 
 .review-item {
@@ -585,9 +607,9 @@ nav .sub-navbar li a {
 .chat-trigger {
   float: right;
 }
-footer{
-  background-color: #6A3C34;
-  color: #FFF5E1;
+footer {
+  background-color: #6a3c34;
+  color: #fff5e1;
 
   width: 100%;
   left: 0;

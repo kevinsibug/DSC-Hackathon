@@ -42,13 +42,16 @@ const Shop = (props) => {
 
   const dummy = useRef();
   return (
+    
     <div>
       <Header />
+      <SignOut {...props} firestore={firestore} auth={auth} user={props.match.params.name}  />
       <Gallery />
       <ShopDetails title={'Juan\'s Paradise'}/>
       <SubheaderShop title={'Shop Vouchers'}
       desc={'Here’s a little treat, check out these vouchers.'}/>
-      <Vouchers />
+      {/* <Vouchers /> */}
+      {user ? <Vouchers /> : <div className = "warning-signin"> <p className = "warning-message">Sign In with Google to View Vouchers</p><SignIn firestore={firestore} auth={auth} user={props.match.params.name}/></div> }
       <SubheaderShop title={'Products'}
       desc={'Pick from our specialties, to be delivered to your doorstep freshly-made.'}/>
       <ShopBanner title={'On the dot delivery'}
@@ -60,9 +63,15 @@ const Shop = (props) => {
       <SubheaderShopB title={'Reviews'}desc={''}/>
       <ShopReviews />
 
-          <SignOut firestore={firestore} auth={auth} user={props.match.params.name} />
+          
       <img className = "chat-trigger" style = {{cursor: 'pointer'}}src = {`/images/Chat.png`} onClick = {onClick}></img>
-      { user ? opened && <div ref={dummy} className = "chat-room"> <ChatRoom firestore={firestore} auth={auth} user={props.match.params.name} /> </div>: <SignIn firestore={firestore} auth={auth} user={props.match.params.name}/>}
+      { user ? opened && 
+      <div ref={dummy} className = "chat-room"> <ChatRoom firestore={firestore} auth={auth} user={props.match.params.name} /> </div>
+      : 
+      <div className = "warning-signin"> 
+      <p className = "warning-message">Sign In with Google to View Shop's Chat</p>
+      <SignIn firestore={firestore} auth={auth} user={props.match.params.name}/>
+      </div>}
 
       {/* {shopSelected &&
               shopSelected.map((value, index) => (
