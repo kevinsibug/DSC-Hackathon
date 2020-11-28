@@ -78,3 +78,44 @@ nav .navbar li a {
   margin: 0 1.563rem;
   letter-spacing: 1.2px;
 }
+
+.search {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: 3.052rem auto;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+}
+
+.search .form-control {
+  height: 3.052rem;
+}
+
+.search .search-button {
+  background-color: #6a3c34;
+  color: white;
+  padding: 1rem 1.563rem;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+}
+.categories {
+  display: flex;
+  justify-content: center;
+}
+
+.categories .category {
+  margin: 1rem;
+}
+.categories .category .category-image{
+  cursor: pointer;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
+.selected{
+  transform: scale(1.2);
+}
+
+.unselected {
+  transform: scale(1);
+}

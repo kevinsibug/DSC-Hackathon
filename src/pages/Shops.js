@@ -1,13 +1,22 @@
 import React from "react";
 
-import Listing from "../components/Listing";
+
 import Header from "../components/Header";
+import Listing from "../components/Listing";
+import Categories from "../components/Categories"
+import Search from "../components/Search"
+
 const Shops = (props) => {
   const listings = props.listings;
+  const firestore = props.firestore;
+
+
   return (
     <div>
       <Header />
-      <Listing listings={listings} />
+      <Search />
+      <Categories firestore = {firestore}/>
+      <Listing firestore = {firestore} listings={listings} />
     </div>
   );
 };
