@@ -79,7 +79,25 @@ nav .navbar li a {
   letter-spacing: 1.2px;
 }
 
+.search {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: 3.052rem auto;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+}
 
+.search .form-control {
+  height: 3.052rem;
+}
+
+.search .search-button {
+  background-color: #6a3c34;
+  color: white;
+  padding: 1rem 1.563rem;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+}
 .categories {
   display: flex;
   justify-content: center;

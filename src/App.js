@@ -31,18 +31,13 @@ const auth = firebase.auth();
 const firestore = firebase.firestore();
 
 function App() {
-  const shopsRef = firestore.collection("shops");
-  const query = shopsRef.orderBy("createdAt").limit(25);
-
-  const [shops] = useCollectionData(shopsRef, { idField: "id" });
-
   return (
     <ListingState>
       <Router>
         <div className="App container">
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/shops" render = {props => <Shops firestore = {firestore} listings = {shops}/>}/>
+            <Route exact path="/shops" render = {props => <Shops firestore = {firestore} />}/>
           </Switch>
         </div>
       </Router>

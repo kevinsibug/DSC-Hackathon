@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, {useContext} from "react";
 
 import ListingContext from "../context/listingContext";
 import ListingItem from "./ListingItem";
@@ -7,10 +7,11 @@ import { useCollectionData } from "react-firebase-hooks/firestore";
 
 const Listing = (props) => {
   const listingContext = useContext(ListingContext);
-
   const { category } = listingContext;
-  let { firestore, listings } = props;
-  let shopsRef
+
+  let { firestore} = props;
+  let shopsRef, listings;
+
   if (category) {
     shopsRef = firestore
       .collection("shops")
@@ -20,6 +21,8 @@ const Listing = (props) => {
   }
 
   [listings] = useCollectionData(shopsRef, { idField: "id" });
+
+  
   return (
     <main role="main">
       <div className="album py-5 bg-light">
