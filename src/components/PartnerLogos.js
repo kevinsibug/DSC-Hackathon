@@ -10,14 +10,14 @@ const PartnerLogos = (props) => {
     return (
         <div className='partner-logos'>
           <div className='d-flex justify-content-center'>
-          <img src = {CrownBakery} class='partner-logo'/>
-          <img src = {LaFleur} class='partner-logo' />
-          <img src = {ModaHome} class='partner-logo' />
-          <img src = {Ekko} class='partner-logo-edge'/>
+          <img src = {CrownBakery} className='partner-logo'/>
+          <img src = {LaFleur} className='partner-logo' />
+          <img src = {ModaHome} className='partner-logo' />
+          <img src = {Ekko} className='partner-logo-edge'/>
           </div>
           <div className='d-flex justify-content-center'>
-          <img src = {CraftsPaperie} class='partner-logo'/>
-          <img src = {TeaChiCo} class='partner-logo-edge'/>
+          <img src = {CraftsPaperie} className='partner-logo'/>
+          <img src = {TeaChiCo} className='partner-logo-edge'/>
           </div>
         </div>
     )

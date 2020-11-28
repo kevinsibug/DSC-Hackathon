@@ -6,7 +6,7 @@ import Search from '../components/Search'
 const CTA = () => {
     return (
         <div>
-            <img src = {Logo} class='logo-illus'>
+            <img src = {Logo} className='logo-illus'>
             </img>
             <div className  = "home-logo">
                 TindaJuan

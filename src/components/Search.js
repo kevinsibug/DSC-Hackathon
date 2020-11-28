@@ -36,7 +36,7 @@ const Search = () => {
         <input onChange = {onChangeLocation} className = "form-controlB" placeholder="Enter your Location"></input>
       </div>
 
-      <input className = "search-button" type="Submit" value="SEARCH"></input>
+      <input className = "search-button" type="Submit" defaultValue="SEARCH"></input>
     </form>
     </div>
   );

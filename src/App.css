@@ -60,6 +60,14 @@ header {
   left: 0;
 }
 
+.header-shops {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.563rem;
+  position: relative;
+
+}
+
 ul {
   padding: 0 !important;
 }
@@ -99,6 +107,19 @@ ul {
   font-size: 3.052rem;
 }
 
+nav .navbar-shops {
+  display: flex;
+}
+nav .navbar-shops li {
+  list-style-type: none;
+}
+nav .navbar-shops li a {
+  text-decoration: none;
+  font-family: "Sarabun", sans-serif;
+  margin: 0 1.563rem;
+  letter-spacing: 1.2px;
+}
+
 .footer-logo {
   font-family: "DM Serif Display", serif;
   color: #FFF5E1;
@@ -108,6 +129,10 @@ ul {
 nav {
   padding-top: 6em;
   padding-bottom: 4em;
+}
+
+.nav-shops {
+  padding: 1rem;
 }
 
 

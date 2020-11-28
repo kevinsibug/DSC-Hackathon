@@ -32,19 +32,24 @@ const auth = firebase.auth();
 const firestore = firebase.firestore();
 
 function App() {
+  const [user] = useAuthState(auth);
+  console.log(user)
+
   return (
     <ListingState>
       <Router>
         <div className="App container">
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" render = {props => <Home firestore = {firestore} />}/>
             <Route exact path="/shops" render = {props => <Shops firestore = {firestore} />}/>
-            <Route exact path="/shops/:name" render = {props => <Shop firestore = {firestore} />}/>
+            <Route exact path="/shops/:name" render = {props => <Shop firestore = {firestore} user = {user} auth = {auth} />}/>
           </Switch>
         </div>
       </Router>
     </ListingState>
   );
 }
+
+
 
 export default App;
