@@ -2,7 +2,7 @@ import React, { useReducer } from "react";
 import ListingContext from "./listingContext";
 import ListingReducer from "./listingReducer";
 import {
-  SORT_LISTINGS,
+  SHOW_CATEGORY,
   REVIEW_LISTING,
   CHAT_LISTING,
   SET_LOADING,
@@ -10,19 +10,18 @@ import {
 
 const ListingState = (props) => {
   const initialState = {
-    listings: [
-      {
-        id: "1",
-        name: "restaurant 1",
-        address: "sample address",
-        rating: { size: 30, value: 2.5, edit: false },
-      },
-    ],
+    category: "",
     loading: false,
   };
   const [state, dispatch] = useReducer(ListingReducer, initialState);
 
-  //Sorting Listings
+  //Show Category
+  const showCategory = (category) => {
+    dispatch({
+      type: SHOW_CATEGORY,
+      payload: category,
+    });
+  };
 
   //Review Listing
 
@@ -33,8 +32,9 @@ const ListingState = (props) => {
   return (
     <ListingContext.Provider
       value={{
-        listings: state.listings,
+        category: state.category,
         loading: state.loading,
+        showCategory
       }}
     >
       {props.children}

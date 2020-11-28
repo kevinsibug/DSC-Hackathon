@@ -1,17 +1,20 @@
-import React from 'react'
-// import Food from '../static/categories/food.png'
-// import Arts from '../static/categories/arts.png'
-// import Clothes from '../static/categories/clothes.png'
-// import Gardening from '../static/categories/gardening.png'
-// import Services from '../static/categories/others.png'
+import React, {useContext} from 'react'
+
+import ListingContext from '../context/listingContext'
 
 const Category = (props) => {
-
     const category = props.values.category
-    console.log(category.split(" ")[0])
+
+    const listingContext = useContext(ListingContext)
+    const { showCategory } = listingContext;
+
+    const onClick = (e) => {
+        e.preventDefault();
+        showCategory(category);
+    }
     return (
         <div className = "category">
-            <img data-value = {category} src = {`/images/categories/${category.split(" ")[0].toLowerCase()}.png`} className = "category-image"></img>
+            <img onClick = {onClick} data-value = {category} src = {`/images/categories/${category.split(" ")[0].toLowerCase()}.png`} className = "category-image"></img>
         </div>
     )
 }

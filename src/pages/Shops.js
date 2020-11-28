@@ -14,7 +14,7 @@ const Shops = (props) => {
     <div>
       <Header />
       <Categories firestore = {firestore}/>
-      <Listing listings={listings} />
+      <Listing firestore = {firestore} listings={listings} />
     </div>
   );
 };

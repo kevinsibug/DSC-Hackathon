@@ -88,3 +88,6 @@ nav .navbar li a {
 .categories .category {
   margin: 1rem;
 }
+.categories .category .category-image{
+  cursor: pointer;
+}
