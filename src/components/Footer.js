@@ -38,6 +38,9 @@ const Footer = () => {
           <div className = "footer-logo">
               TindaJuan
           </div>
+          <div>
+              Copyright © 2020. All Rights Reserved.
+          </div>
         </footer>
 
     )
