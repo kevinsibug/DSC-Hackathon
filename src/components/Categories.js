@@ -6,7 +6,7 @@ import Category from './Category'
 
 const Categories = (props) => {
     const firestore = props.firestore;
-    
+
     const categories = firestore.collection("categories").orderBy("order", "asc");
     const [categoriesList] = useCollectionData(categories, { idField: "id" })
     return (

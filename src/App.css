@@ -186,7 +186,11 @@ nav .navbar li a {
   max-width: 350px;
   width: 100%;
   height: auto;
+  padding-bottom: 1em;
+  border-radius: 16px;
+  background-color: white;
 }
+
 .selected{
   transform: scale(1.2);
 }
@@ -206,7 +210,7 @@ nav .navbar li a {
 .subheader-desc {
   font-family: 'Sarabun';
   text-align: center;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 .banner {
