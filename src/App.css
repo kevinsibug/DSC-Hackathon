@@ -119,3 +119,8 @@ nav .navbar li a {
 .unselected {
   transform: scale(1);
 }
+
+.banner {
+  font-family: 'DM Serif Display';
+  font-color: #6A3C34;
+}

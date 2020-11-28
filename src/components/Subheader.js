@@ -6,7 +6,7 @@ const Subheader = (props) => {
           <div className='subheader'>
           <h2>{props.title}</h2>
           </div>
-          <div className='subheader desc'>
+          <div className='subheader-desc'>
           {props.desc}
           </div>
         </div>
