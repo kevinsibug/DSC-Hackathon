@@ -5,24 +5,14 @@ import ListingItem from "./ListingItem";
 
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
-const Listing = (props) => {
+const Featured = (props) => {
   const listingContext = useContext(ListingContext);
   const { category, text, location } = listingContext;
 
   let { firestore } = props;
   let shopsRef, listings;
 
-  if (category) {
-    shopsRef = firestore
-      .collection("shops")
-      .where("category", "==", `${category.toLowerCase()}`);
-  } else {
-    shopsRef = firestore.collection("shops");
-  }
-
-  if (text) {
-    shopsRef = shopsRef.where("keywords", "array-contains", text);
-  }
+  shopsRef = firestore.collection("shops").where("featured", "==", true);
 
   [listings] = useCollectionData(shopsRef, { idField: "id" });
   return (
@@ -41,4 +31,4 @@ const Listing = (props) => {
   );
 };
 
-export default Listing;
+export default Featured;

@@ -3,7 +3,7 @@ import React from "react";
 const SignUp = () => {
   return (
     <div>
-      <input className = "button" type="Submit" value="SIGN ME UP"></input>
+      <input className = "button" type="Submit" defaultValue="SIGN ME UP"></input>
     </div>
   );
 };
