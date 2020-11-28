@@ -1,4 +1,5 @@
 import React from 'react'
+import SignUp from '../components/SignUp'
 
 const Banner = (props) => {
     return (
@@ -9,7 +10,9 @@ const Banner = (props) => {
           <div className='banner-desc'>
           {props.desc}
           </div>
+          <SignUp />
         </div>
+
     )
 }
 
