@@ -1,12 +1,19 @@
-import React from 'react'
+import React from "react";
 
 const SignOut = (props) => {
+  const { auth } = props;
+  return (
+    auth.currentUser && (
+      <button
+        onClick={() => {
+          auth.signOut();
+          // document.reload();
+        }}
+      >
+        Sign Out
+      </button>
+    )
+  );
+};
 
-    const {auth} = props
-    return (
-        auth.currentUser && <button onClick={() => auth.signOut()}>Sign Out</button>
-      );
-}
-
-export default SignOut
-
+export default SignOut;
