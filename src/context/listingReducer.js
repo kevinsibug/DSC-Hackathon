@@ -3,6 +3,7 @@ import {
     RESET_CATEGORY,
     SHOW_TEXT,
     SHOW_LOCATION,
+    SET_SHOP,
   } from "./types";
   
 
@@ -28,6 +29,11 @@ export default (state, action) => {
             return {
                 ...state,
                 location: action.payload,
+            }
+        case SET_SHOP:
+            return {
+                ...state,
+                shop: action.payload,
             }
 
         default:

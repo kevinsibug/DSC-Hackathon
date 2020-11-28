@@ -6,6 +6,7 @@ import {
   RESET_CATEGORY,
   SHOW_TEXT,
   SHOW_LOCATION,
+  SET_SHOP,
 } from "./types";
 
 const ListingState = (props) => {
@@ -14,6 +15,7 @@ const ListingState = (props) => {
     text: "",
     location: "",
     loading: false,
+    shop: "",
   };
   const [state, dispatch] = useReducer(ListingReducer, initialState);
 
@@ -47,6 +49,13 @@ const ListingState = (props) => {
       payload: text,
     });
   }
+  //Set Shop
+  const setShop = (text) => {
+    dispatch({
+      type: SET_SHOP,
+      payload: text,
+    });
+  }
 
   return (
     <ListingContext.Provider
@@ -55,10 +64,12 @@ const ListingState = (props) => {
         loading: state.loading,
         text: state.text,
         location: state.location,
+        shop: state.shop,
         showCategory,
         resetCategory,
         showText,
-        showLocation
+        showLocation,
+        setShop
       }}
     >
       {props.children}
