@@ -537,9 +537,36 @@ nav .sub-navbar li a {
   color: #fcfffe;
 }
 
-footer {
-  background-color: #6a3c34;
-  color: #fff5e1;
+
+.user-pic{
+  height: 5em;
+  padding-left: 4em;
+}
+
+.main-comment{
+  font-family: 'Manrope';
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 0 !important;
+}
+
+.from-rev{
+  height: 2em;
+  margin-bottom: 1em !important;
+}
+
+.rating-number{
+  font-family: 'Sarabun';
+  font-weight: normal;
+  font-size: 2.5em;
+  margin-bottom: 0 !important;
+  padding-right: 1em;
+}
+
+footer{
+  background-color: #6A3C34;
+  color: #FFF5E1;
+
   width: 100%;
   left: 0;
   position: absolute;
