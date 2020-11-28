@@ -5,11 +5,11 @@ const Search = () => {
     <div className= 'd-flex justify-content-center'>
     <div className="search form-row">
       <div className="col">
-        <input className = "form-control" placeholder="What are you looking for?"></input>
+        <input className = "form-controlA" placeholder="    What are you looking for?"></input>
       </div>
 
       <div className="col">
-        <input className = "form-control" placeholder="Location"></input>
+        <input className = "form-controlB" placeholder="    Location"></input>
       </div>
 
       <input className = "search-button" type="Submit" value="SEARCH"></input>

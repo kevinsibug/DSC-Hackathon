@@ -140,16 +140,25 @@ nav .navbar li a {
   align-items: center;
   max-width: 1000px;
   margin-top: 6rem;
-  margin-bottom: 12rem;
+  margin-bottom: 14rem;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
 }
 
-.search .form-control {
+.form-controlA {
   height: 3.052rem;
   width: 25em;
+  border-radius: 6px 0px 0px 6px;
+  border: none;
+}
+.form-controlB {
+  height: 3.052rem;
+  width: 15em;
+  border-radius: 0px;
+  border: none;
+  margin-right: 0.25em;
 }
 
-.search .search-button {
+.search-button {
   background-color: #6a3c34;
   color: white;
   padding: 0.8rem 1.563rem;

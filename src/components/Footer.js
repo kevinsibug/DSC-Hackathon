@@ -1,7 +1,7 @@
 import React from 'react'
-import Facebook from '../static/facebook.png'
-import Twitter from '../static/twitter.png'
-import Mail from '../static/mail.png'
+import Facebook from '../static/facebook.svg'
+import Twitter from '../static/twitter.svg'
+import Mail from '../static/mail.svg'
 
 const Footer = () => {
     return (
