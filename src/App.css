@@ -69,6 +69,13 @@ ul {
   color: #6a3c34;
   font-size: 3.052rem;
 }
+
+.footer-logo {
+  font-family: "DM Serif Display", serif;
+  color: #FFF5E1;
+  font-size: 3.052rem;
+}
+
 nav .navbar li {
   list-style-type: none;
 }
@@ -123,4 +130,8 @@ nav .navbar li a {
 .banner {
   font-family: 'DM Serif Display';
   font-color: #6A3C34;
+}
+
+footer{
+  background-color: #6A3C34;
 }
