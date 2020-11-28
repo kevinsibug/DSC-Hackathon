@@ -1,8 +1,6 @@
 import React, {useState} from "react";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import { useAuthState } from "react-firebase-hooks/auth";
-
-import Header from "../components/Header";
 import SignIn from "../components/SignIn";
 import SignOut from "../components/SignOut";
 import ChatRoom from "../components/ChatRoom";
