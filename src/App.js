@@ -14,6 +14,8 @@ import { useCollectionData } from "react-firebase-hooks/firestore";
 import Home from "./pages/Home";
 import Shops from "./pages/Shops";
 import Shop from "./pages/Shop";
+import AboutUs from "./pages/AboutUs";
+import Faqs from "./pages/FAQs";
 
 import ListingState from "./context/ListingState";
 
@@ -40,6 +42,8 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/shops" render = {props => <Shops firestore = {firestore} />}/>
             <Route exact path="/shops/:name" render = {props => <Shop firestore = {firestore} />}/>
+            <Route exact path="/aboutus" render = {props => <AboutUs firestore = {firestore} />}/>
+            <Route exact path="/faqs" render = {props => <Faqs firestore = {firestore} />}/>
           </Switch>
         </div>
       </Router>

@@ -4,6 +4,7 @@ import {
     SHOW_TEXT,
     SHOW_LOCATION,
     SET_SHOP,
+    SHOW_SUBSCRIPTION,
   } from "./types";
   
 
@@ -35,6 +36,11 @@ export default (state, action) => {
                 ...state,
                 shop: action.payload,
             }
+        case SHOW_SUBSCRIPTION:
+            return {
+                ...state,
+                subscription: action.payload,
+            }    
 
         default:
             return state
