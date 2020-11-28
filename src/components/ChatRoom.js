@@ -47,6 +47,7 @@ const ChatRoom = (props) => {
 
   return (
     <>
+      <div className="chat-header"></div>
       <main className="main-chat">
         {messages &&
           messages.map((msg) => (
