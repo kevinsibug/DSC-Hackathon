@@ -5,7 +5,7 @@ import Tag from '../static/tag.svg'
 const Vouchers = (props) => {
     return (
         <div className='row justify-content-center'>
-          <div className='card'>
+          <div className='cardA'>
             <div className= 'row'>
               <div className='col-8'>
                   <div className  = "row voucher-row">

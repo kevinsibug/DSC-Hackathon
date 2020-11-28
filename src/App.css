@@ -61,15 +61,14 @@ header {
 }
 
 ul {
-  margin-bottom: 0 !important
-
+  margin-bottom: 0 !important;
+}
 .row {
   margin-right: 0 !important;
   margin-left: 0 !important;
 }
 
 
-}
 
 .logo-home{
     text-decoration: none;
@@ -435,7 +434,7 @@ nav .sub-navbar li a {
   padding: 0 !important;
 }
 
-.card {
+.cardA {
   width: 40%;
   height: 10em;
   border: 2px !important;
