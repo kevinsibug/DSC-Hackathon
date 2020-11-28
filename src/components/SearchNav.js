@@ -1,7 +1,7 @@
 import React, {useState, useContext} from "react";
 
 import ListingContext from "../context/listingContext";
-const Search = () => {
+const SearchNav = () => {
   const listingContext = useContext(ListingContext);
   const {showText, showLocation} = listingContext
 
@@ -25,7 +25,7 @@ const Search = () => {
   return (
 
     <div className= 'd-flex justify-content-center'>
-    <form className="search form-row"  onSubmit = {onSubmit}>
+    <form className="search-nav form-row"  onSubmit = {onSubmit}>
       <div className="col">
         <input onChange = {onChangeText} className = "form-controlA" placeholder="    What are you looking for?"></input>
       </div>
@@ -40,4 +40,4 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default SearchNav;

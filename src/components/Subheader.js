@@ -2,7 +2,7 @@ import React from 'react'
 
 const Subheader = (props) => {
     return (
-        <div>
+        <div className='row'>
           <div>
             <h2 className='subheader'>{props.title}</h2>
           </div>
