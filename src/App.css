@@ -340,6 +340,19 @@ nav .sub-navbar li a {
   padding-bottom: 1em;
 }
 
+.shop-info {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.shop-logo {
+  width: 100%;
+  max-width: 8rem;
+  height: auto;
+  margin-right: 1rem;
+}
+
 .boxsubheader {
   font-family: 'Manrope';
   font-weight: 800;
@@ -661,13 +674,12 @@ nav .sub-navbar li a {
 
 .tag-content {
   background-color: #94c3af;
-  margin-top: 3em;
-  margin-bottom: 2em;
-  margin-left: 1em;
+  margin: 1rem 0;
   padding: 0.25em 0.75em;
   border-radius: 6px;
   font-weight: bold;
   color: #fcfffe;
+  display: inline-block;
 }
 
 .user-pic {

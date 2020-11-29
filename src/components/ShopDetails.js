@@ -2,15 +2,22 @@ import React from 'react'
 
 import Pin from '../static/map-pin.svg'
 import Rating from '../static/rating.png'
+import JuanP from '../static/juanp-logo.png'
+
 const ShopDetails = (props) => {
     return (
       <div className='row'>
         <div className='col'>
-        <div className='row'>
-          <h1 className='shop-header'>{props.title}</h1>
+        <div className='ro shop-info'>
+          <img className = "shop-logo" src = {JuanP}></img>
+          <div>         
+            
+            <h1 className='shop-header'>{props.title}</h1>
           <div className='tag-content'>
             FOOD
           </div>
+          </div>
+
         </div>
         <div className='row align-self-center'>
           <img src = {Pin} className='social-icon align-bottom'/>
