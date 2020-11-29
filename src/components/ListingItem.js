@@ -7,7 +7,7 @@ import ReactStars from "react-rating-stars-component";
 import ListingContext from "../context/listingContext";
 
 const ListingItem = (props) => {
-  const {name, address, rating, category, description, chatRoomName } = props.details;
+  const {name, address, rating, category, description, chatRoomName, image } = props.details;
   const listingContext = useContext(ListingContext);
 
   const {setShop, setChat} = listingContext;
@@ -17,6 +17,8 @@ const ListingItem = (props) => {
     setShop(name)
   };
 
+  console.log(image)
+
 
   return (
     <div className="col-md-4 listing" data-shop={name} onClick={onClick}>
@@ -24,7 +26,7 @@ const ListingItem = (props) => {
         <Link to={`/shops/${name}`}>
           <img
             data-shop={name}
-            src={PlaceHolderImage}
+            src={`/images/shops/${image.toLowerCase()}.png`}
             className="bd-placeholder-img card-img-top"
             width="100%"
             height="225"
