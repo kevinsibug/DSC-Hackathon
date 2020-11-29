@@ -18,6 +18,11 @@ To Start Server:
 To Visit App:
 
 `localhost:3000/`
+
+## Figma File for the UI Design
+
+https://www.figma.com/file/dkTXm9tJ24mPpLa12dq0iu/FOUR-LOOP-DSC-Hackathon-2020?node-id=0%3A1
+
 ## Available Scripts
 
 In the project directory, you can run:
