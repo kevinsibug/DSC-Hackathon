@@ -15,9 +15,6 @@ const Faqs = (props) => {
        <FaqSubheader title={'Frequently Asked Questions'}
               desc={'How do I set up my shop? '}
               sec={'More details on how to set up your own shop can be done through signing up in the website.'}/>
-       <div>
-       <h5 className='faqheader-desc'>Can I post a review even without making transactions with the shop?</h5>
-       </div>
       <Footer />
     </div>
   );

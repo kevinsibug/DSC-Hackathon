@@ -280,12 +280,9 @@ nav .sub-navbar li a {
 
 .box-banner{
   background-color: #ffffff;
-  width: 80vw;
   position: relative;
-  margin-left: -15%;
   margin-top: 10%;
   top: 15%;
-  left: 25%;
   border-radius: 10px;
   height: 15em;
 }
@@ -373,6 +370,7 @@ nav .sub-navbar li a {
   padding-bottom: 2em;
 }
 
+
 .faqsubheader {
   font-family: 'Manrope';
   font-weight: 800;
@@ -395,6 +393,16 @@ nav .sub-navbar li a {
   padding-bottom: 2em;
 }
 
+.faq {
+  margin: 1.98rem 0;
+}
+
+.faqheader-desc {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-bottom: 1.98rem;
+  
+}
 .banner {
   font-family: "DM Serif Display";
   color: #6a3c34 !important;
@@ -406,7 +414,7 @@ nav .sub-navbar li a {
 .banner-desc {
   padding-top: 10vh;
   padding-right: 18em;
-  font-color: #6a3c34 !important;
+  color: #6a3c34 !important;
 }
 
 .banner-photo {

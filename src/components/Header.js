@@ -22,10 +22,10 @@ const Header = () => {
                     <li><a href='/shops' className='navbar-items'>Shops</a><a><img src = {Chevron} className='social-icon'/></a></li>
 
 
-                    <li><a href='/actual-shop' className='navbar-items'>About Us</a></li>
+                    <li><a href='/aboutus' className='navbar-items'>About Us</a></li>
 
 
-                    <li><a href='/shops'className='navbar-items'>FAQs</a></li>
+                    <li><a href='/faqs'className='navbar-items'>FAQs</a></li>
 
 
                 </ul>
