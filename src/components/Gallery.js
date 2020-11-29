@@ -8,7 +8,6 @@ import SearchNav from '../components/SearchNav';
 const Gallery = (props) => {
     return (
       <div>
-        <SearchNav />
           <div className='gallery'>
           <div className='gallery-main'>
             <img src = {image1} />

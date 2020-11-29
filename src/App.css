@@ -64,7 +64,7 @@ ul {
   margin-bottom: 0 !important;
 }
 
-.google-button {
+.google-button, .google-button-out {
   background-color: #6a3c34;
   color: #fff5e1;
   padding: 0.5rem 3.5rem;
@@ -77,6 +77,9 @@ ul {
   margin: 1rem 0;
 }
 
+.google-button-out {
+  margin: 0 0 3.5rem auto;
+}
 .warning-signin {
   margin: 3.052rem 0;
 }
@@ -170,7 +173,9 @@ nav {
 .sub-nav {
   padding: 0;
 }
-
+nav .sub-navbar {
+  display: flex;
+}
 nav .navbar li {
   list-style-type: none;
   margin-right: 8em;

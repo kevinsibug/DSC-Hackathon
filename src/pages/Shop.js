@@ -26,7 +26,7 @@ const Shop = (props) => {
 
   const shopRef = firestore.collection("shops").where("name", "==", `${props.match.params.name}`);
   const [shopSelected] = useCollectionData(shopRef, { idField: "id" });
-  console.log(shopSelected)
+
   const onClick = () => {
     if (opened) {
       setOpened(false)
@@ -64,6 +64,9 @@ const Shop = (props) => {
       <ShopReviews />
 
           
+
+
+
       <img className = "chat-trigger" style = {{cursor: 'pointer'}}src = {`/images/Chat.png`} onClick = {onClick}></img>
       { user ? opened && 
       <div ref={dummy} className = "chat-room"> <ChatRoom firestore={firestore} auth={auth} user={props.match.params.name} /> </div>

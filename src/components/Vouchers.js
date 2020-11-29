@@ -16,7 +16,7 @@ const Vouchers = (props) => {
                   </div>
                 </div>
               <div className='col-4'>
-                <input className = "claim-button float-right" type="Submit" value="CLAIM"></input>
+                <input className = "claim-button float-right" type="Submit" defaultValue="CLAIM"></input>
             </div>
           </div>
           </div>
@@ -31,7 +31,7 @@ const Vouchers = (props) => {
                 </div>
               </div>
             <div className='col-4'>
-              <input className = "claim-button float-right" type="Submit" value="CLAIM"></input>
+              <input className = "claim-button float-right" type="Submit" defaultValue="CLAIM"></input>
           </div>
             </div>
           </div>
