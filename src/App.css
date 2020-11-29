@@ -260,6 +260,14 @@ nav .sub-navbar li a {
   margin-right: 0.25em;
 }
 
+.form-controlSub {
+
+  height: 3.052rem;
+  width: 40em;
+  border-radius: 6px 0px 0px 6px;
+  border: none;
+}
+
 .search-button {
   background-color: #6a3c34;
   color: white;
@@ -269,6 +277,20 @@ nav .sub-navbar li a {
   font-family: "Work Sans";
   font-weight: 200;
 }
+
+.box-banner{
+  background-color: #ffffff;
+  width: 80vw;
+  position: relative;
+  margin-left: -15%;
+  margin-top: 10%;
+  top: 15%;
+  left: 25%;
+  border-radius: 10px;
+  height: 15em;
+}
+
+
 .categories {
   display: flex;
   justify-content: center;
@@ -321,6 +343,58 @@ nav .sub-navbar li a {
   padding-bottom: 1em;
 }
 
+.boxsubheader {
+  font-family: 'Manrope';
+  font-weight: 800;
+  color: #6A3C34 !important;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.boxsubheader-desc {
+  font-family: 'Sarabun';
+  text-align: center;
+  color: #2E2E2E;
+  padding-bottom: -2em;
+}
+
+.leftsubheader {
+  font-family: 'Manrope';
+  font-weight: 800;
+  color: #6A3C34 !important;
+  text-align: left;
+  padding-top: 2em;
+}
+
+.leftsubheader-desc {
+  font-family: 'Sarabun';
+  text-align: left;
+  color: #2E2E2E;
+  padding-bottom: 2em;
+}
+
+.faqsubheader {
+  font-family: 'Manrope';
+  font-weight: 800;
+  color: #6A3C34 !important;
+  text-align: left;
+  padding-top: 2em;
+}
+
+.faqsubheader-desc {
+  font-family: 'Sarabun';
+  text-align: left;
+  color: #2E2E2E;
+  padding-bottom: 0.5em;
+}
+
+.faqsubheader-desc-desc {
+  font-family: 'Sarabun';
+  text-align: left;
+  color: #2E2E2E;
+  padding-bottom: 2em;
+}
+
 .banner {
   font-family: "DM Serif Display";
   color: #6a3c34 !important;
@@ -345,8 +419,23 @@ nav .sub-navbar li a {
   height: 20em;
 }
 
+
+.fabanner{
+  background: url('./static/placeholder-fabanner.png');
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+  background-size: cover;
+  height: 20em;
+}
+
+.aboutbanner{
+  background: url('./static/About-banner.png');
+
 .banner-photo-shop {
   background: url("./static/voucher-bg.png");
+
   width: 100vw;
   position: relative;
   margin-left: -50vw;
