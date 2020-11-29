@@ -6,8 +6,10 @@ const HomeNav = () => {
           <nav className='d-flex justify-content-center'>
               <ul className = "navbar">
                   <li><a href='/shops'>Shops</a><a><img src = {Chevron} className='social-icon'/></a></li>
-                  <li><a href='/actual-shop'>About Us</a></li>
-                  <li><a href='/shops'>FAQs</a></li>
+
+                  <li><a href='/aboutus'>About Us</a></li>
+                  <li><a href='/faqs'>FAQs</a></li>
+
               </ul>
           </nav>
     )

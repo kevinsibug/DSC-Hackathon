@@ -7,7 +7,9 @@ import {
   SHOW_TEXT,
   SHOW_LOCATION,
   SET_SHOP,
+  SHOW_SUBSCRIPTION,
   SET_CHAT,
+
 } from "./types";
 
 const ListingState = (props) => {
@@ -66,6 +68,13 @@ const ListingState = (props) => {
     });
   }
 
+  //Show Subscription
+  const showSubscription = (text) => {
+    dispatch({
+      type: SHOW_SUBSCRIPTION,
+      payload: text,
+    });
+  }
   return (
     <ListingContext.Provider
       value={{
@@ -80,7 +89,9 @@ const ListingState = (props) => {
         showText,
         showLocation,
         setShop,
+        showSubscription,
         setChat
+
       }}
     >
       {props.children}
