@@ -5,6 +5,7 @@ import {
     SHOW_LOCATION,
     SET_SHOP,
     SHOW_SUBSCRIPTION,
+    SET_CHAT,
   } from "./types";
   
 
@@ -41,6 +42,13 @@ export default (state, action) => {
                 ...state,
                 subscription: action.payload,
             }    
+
+        case SET_CHAT:
+            return {
+                ...state,
+                chat: action.payload,
+            }
+
 
         default:
             return state

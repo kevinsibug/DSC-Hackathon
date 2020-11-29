@@ -7,14 +7,16 @@ import ReactStars from "react-rating-stars-component";
 import ListingContext from "../context/listingContext";
 
 const ListingItem = (props) => {
-  const {name, address, rating, category, description } = props.details;
+  const {name, address, rating, category, description, chatRoomName } = props.details;
   const listingContext = useContext(ListingContext);
 
-  const {setShop} = listingContext;
+  const {setShop, setChat} = listingContext;
 
   const onClick = (e) => {
+    setChat(chatRoomName)
     setShop(name)
   };
+
 
   return (
     <div className="col-md-4 listing" data-shop={name} onClick={onClick}>
@@ -41,7 +43,7 @@ const ListingItem = (props) => {
           <p className="card-text" data-shop={name}>
             {description}
           </p>
-          <p className="card-text" data-shop={name}>
+          <p className={`card-text card-category ${category}`} data-shop={name}>
             {category}
           </p>
           <div

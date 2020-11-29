@@ -8,6 +8,8 @@ import {
   SHOW_LOCATION,
   SET_SHOP,
   SHOW_SUBSCRIPTION,
+  SET_CHAT,
+
 } from "./types";
 
 const ListingState = (props) => {
@@ -17,6 +19,7 @@ const ListingState = (props) => {
     location: "",
     loading: false,
     shop: "",
+    chat: "",
   };
   const [state, dispatch] = useReducer(ListingReducer, initialState);
 
@@ -57,6 +60,13 @@ const ListingState = (props) => {
       payload: text,
     });
   }
+  //Set Chat
+  const setChat = (text) => {
+    dispatch({
+      type: SET_CHAT,
+      payload: text,
+    });
+  }
 
   //Show Subscription
   const showSubscription = (text) => {
@@ -73,12 +83,15 @@ const ListingState = (props) => {
         text: state.text,
         location: state.location,
         shop: state.shop,
+        chat: state.chat,
         showCategory,
         resetCategory,
         showText,
         showLocation,
         setShop,
-        showSubscription
+        showSubscription,
+        setChat
+
       }}
     >
       {props.children}
