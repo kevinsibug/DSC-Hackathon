@@ -452,7 +452,7 @@ nav .sub-navbar li a {
   padding: 0 !important;
 }
 
-.card-category {
+/* .card-category {
   padding: 0.8rem 1.25rem;
   display: inline-block;
   border-radius: 4px;
@@ -461,6 +461,16 @@ nav .sub-navbar li a {
   font-family: Manrope;
   text-transform: uppercase;
   letter-spacing: 1.2px;
+} */
+
+.card-category {
+  display: inline-block;
+  padding: 0.8rem 1.25rem;
+  margin: 0;
+  padding: 0.25em 0.75em;
+  border-radius: 6px;
+  font-weight: normal;
+  color: black;
 }
 
 .food {
@@ -580,6 +590,7 @@ nav .sub-navbar li a {
   margin-bottom: 1em !important;
 }
 .gallery {
+  margin: 3.052rem 0 1rem;
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -618,6 +629,9 @@ nav .sub-navbar li a {
   display: flex;
 }
 
+.review-date {
+  color: #999999;
+}
 .user-pic {
   padding: 0;
   margin-right: 3.052rem;
@@ -625,6 +639,16 @@ nav .sub-navbar li a {
 
 .chat-trigger {
   float: right;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item {
+  margin: 1rem 1rem 2rem;
 }
 footer {
   background-color: #6a3c34;

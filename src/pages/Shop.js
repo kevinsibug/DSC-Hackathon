@@ -17,6 +17,7 @@ import ShopContact from '../components/ShopContact';
 import ShopBanner from '../components/ShopBanner';
 import ShopLocation from '../components/ShopLocation';
 import ShopReviews from '../components/ShopReviews';
+import Menu from '../components/Menu';
 
 const Shop = (props) => {
   const {firestore, auth } = props;
@@ -54,6 +55,13 @@ const Shop = (props) => {
       {user ? <Vouchers /> : <div className = "warning-signin"> <p className = "warning-message">Sign In with Google to View Vouchers</p><SignIn firestore={firestore} auth={auth} user={props.match.params.name}/></div> }
       <SubheaderShop title={'Products'}
       desc={'Pick from our specialties, to be delivered to your doorstep freshly-made.'}/>
+      
+      <div className = "menu"> 
+      <Menu />
+      <Menu />
+      <Menu />
+      </div>
+
       <ShopBanner title={'On the dot delivery'}
       desc={'Craving for something and want it delivered in an instant? Crown Bakery guarantees a 60 minute delivery if you are within 10km the proximity of the shop! Enjoy the treats and wonders of a filipino-style cuisine delivered to you in a flash.'}/>
       <SubheaderShopB title={'Order Via'} desc={''} />

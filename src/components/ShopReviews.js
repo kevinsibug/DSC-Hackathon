@@ -32,6 +32,9 @@ const ShopReviews = (props) => {
             family and friends. Definitely recommend this to me family and
             friends. I will buy again for more!!
           </p>
+          <p className = "review-date">
+            2020 - 11 - 27
+          </p>
         </div>
       </div>
     </div>
