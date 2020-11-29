@@ -30,9 +30,9 @@ const SearchNav = () => {
         <input onChange = {onChangeText} className = "form-controlA" placeholder="    What are you looking for?"></input>
       </div>
 
-      <div className="col">
+      {/* <div className="col">
         <input onChange = {onChangeLocation} className = "form-controlB" placeholder="    Enter your Location"></input>
-      </div>
+      </div> */}
 
       <input className = "search-button" type="Submit" value="SEARCH"></input>
     </form>
