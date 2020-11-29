@@ -1,6 +1,7 @@
 import React from 'react'
 
-import PlaceholderImage from '../static/Placeholder_menu.png'
+// import PlaceholderImage from '../static/Placeholder_menu.png'
+import PlaceholderImage from '../static/placeholder_menu.png'
 
 const Menu = () => {
     return (
